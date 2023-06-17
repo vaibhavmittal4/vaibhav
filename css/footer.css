@@ -389,7 +389,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
     width: fit-content;
     left: 50%;
@@ -413,6 +413,7 @@
 #c2,#c3{
     width: 49%;
     /* border: 1px solid red; */
+    margin-top: 50px;
 }
 .heading{
     text-align: left;
@@ -472,7 +473,7 @@
 
 #c4{
     border: 2px solid white;
-    width: 50%;
+    width: 80%;
     height: 280px;
     margin-top: 40px;
 }
