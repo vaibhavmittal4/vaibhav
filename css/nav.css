@@ -1,0 +1,102 @@
+.navbar
+{
+    width: 100vw;
+    height: 100px;
+    box-shadow: 0px 5px 13px -3px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    background-color: white;
+    position: fixed;
+}
+.navbar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .logo, .navbar .contact-details {
+    width: 20%;
+}
+
+.navbar .links{
+    width: 40%;
+}
+
+
+.navbar .logo p{
+    font-family: 'Open Sans', serif;
+    font-style: italic;
+    padding-top: 5px;
+}
+
+
+
+.navbar .links ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .links li{
+    list-style: none;
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    position: relative;
+}
+
+.navbar .links li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.175rem;
+    background: var(--primary-blue-color);
+    left: 0;
+    bottom: 0;
+    transform: scale(0,1);
+    transition: transform 0.3s ease;
+}
+
+
+.navbar .links ul li a{
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: .9vw;
+}
+
+.navbar .links ul li:hover::after{
+    transform: scale(1,1);
+}
+
+.navbar .contact-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .contact-details p{
+    margin-right: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--primary-blue-color);
+    font-weight: bold;
+}
+
+.navbar .contact-details button {
+    width: 35%;
+    height: 40px;
+    background-color: var(--primary-blue-color);
+    color: white;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    border-radius: 5px;
+    font-size: .7vw;
+    cursor: pointer;
+}
