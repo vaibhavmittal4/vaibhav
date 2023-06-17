@@ -234,7 +234,7 @@ p:nth-child(2) {
 @media screen and (max-width:620px) {
     #main_footer {
         position: relative;
-        top: 570px;
+        top: 670px;
     
         /* border: 1px solid black; */
     }
@@ -666,7 +666,7 @@ p:nth-child(2) {
     flex-direction: column;
     justify-content: space-between;
     height: 600px;
-    top: 550px;
+    top: 590px;
 }
 
 .what-is-content{
