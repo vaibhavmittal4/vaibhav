@@ -120,6 +120,7 @@ p:nth-child(2)
         
         /* padding-bottom: 300px; */
         position: relative;
+        
     }
     :root{
         --primary-blue-color: #1F5EAB;
@@ -129,7 +130,7 @@ p:nth-child(2)
         position: relative;
         background: #053065;
         height: 1000px;
-       
+        padding-bottom: 20%;
     }
      #sec{
         display: flex;
@@ -164,15 +165,16 @@ p:nth-child(2)
     #dc{
         width:50%;
         position: absolute;
-        margin-top:10%;
-        top:25%;
-        transform: translateY(-25%);
+        margin-top:20%;
+        /* top:15%;
+        transform: translateY(-15%); */
         left: 0;
-        height: 65%;
+        height: 80%;
         text-align: center;
         left: 25%;
         transform: translateZ(-25%);
         bottom: 0px;
+                border: 1px solid orange;
     }
     #sec2{
         width: 100%;
