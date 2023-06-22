@@ -1658,6 +1658,7 @@ p:nth-child(2) {
         background-repeat: no-repeat;
         background-position: top;
         background-size: contain;
+        margin-top: 50px;
     }
     
     .doc-grid{
@@ -1665,7 +1666,7 @@ p:nth-child(2) {
         position: relative;
         top: 5%;
         width: 80%;
-        height: 70%;
+        height: 90%;
         left: 50%;
         transform: translateX(-50%);
         display: grid;
@@ -1724,8 +1725,8 @@ p:nth-child(2) {
         background-repeat: no-repeat;
         background-position: top;
         background-size: contain;
+        margin-top: 100px;
     }
-    
     .doc-grid{
         border: px solid red;
         position: relative;
@@ -1841,6 +1842,7 @@ p:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .carousel-inner{
@@ -1953,10 +1955,11 @@ p:nth-child(2) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+        margin-top: 0px;
         background: url(./../images/Testimonials.png);
         background-size: cover;
         background-position: top;
+        background-position:0px -20px;
     }
     
     .testimonials-heading{
@@ -2108,6 +2111,7 @@ p:nth-child(2) {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: top;
+        background-position:0px -20px;
     }
     
     .testimonials-heading{
