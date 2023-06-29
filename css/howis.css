@@ -100,13 +100,13 @@ z-index: 0;
 }
 @media screen and (max-width:500px){
     #howis{
-        margin-top: 3%;
+        margin-top: 100px;
         /* border: 1px solid black; */
     }
     #text{
         /* border: 1px solid black; */
         padding-left: 0px;
-        padding-top:0px;
+        padding-top:00px;
         /* border:1px solid black ; */
         height: fit-content;
     }
@@ -127,12 +127,14 @@ z-index: 0;
         color: #00569C;
         font-size: 50px;
         line-height: 50px;
+        margin-top: 0px;
     }
     #ct{
         font-family: 'Righteous', cursive;
         color:#F8A52B ;
         font-size: 50px;
         line-height:50px;
+        margin-top: 0px;
     }
     #text p{
         font-size: 18px;
@@ -198,7 +200,7 @@ z-index: 0;
 }
 @media screen and  (min-width:501px) and (max-width:620px){
     #howis{
-        margin-top: 5%;
+        margin-top: 100px;
         /* border: 1px solid black; */
     }
     #text{
@@ -296,7 +298,7 @@ z-index: 0;
 }
 @media screen and  (min-width:621px) and (max-width:750px){
     #howis{
-        margin-top: 7%;
+        margin-top: 100px;
         /* border: 1px solid black; */
     }
     #text{
@@ -394,7 +396,7 @@ z-index: 0;
 }
 @media screen and  (min-width:751px) and (max-width:950px){
     #howis{
-        margin-top: 7%;
+        margin-top: 100px;
         /* border: 1px solid black; */
     }
     #text{
@@ -479,7 +481,7 @@ z-index: 0;
     } 
     #grid-11{
         display: grid;
-        grid-template-columns: 50% 50% ;
+        grid-template-columns:100% ;
         gap: 40px;
         /* border: 1px solid red; */
         
@@ -490,9 +492,9 @@ z-index: 0;
         
     }
 }
-@media screen and  (min-width:951px) and (max-width:1035px){
+@media screen and  (min-width:951px) and (max-width:1150px){
     #howis{
-        margin-top: 7%;
+        margin-top: 50px;
         /* border: 1px solid black; */
     }
     #text{
