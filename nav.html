@@ -1,47 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar</title>
-    <link rel="stylesheet" href="./css/nav.css" />
-  </head>
-  <body>
-    <div id="nav" class="navbar">
-      <div class="logo">
-        <img src="./images/logo.png" alt="" class="logo-img" />
-        <p>CancerFree</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="https://kit.fontawesome.com/a862feff0b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/links-toggle.css">
+</head>
+<body>
+    <div class="header grayscale">
+        <div class="icons">
+          
+          <i class="fa-brands fa-facebook-square icon adjustable_text high-contrast" style="color: #1F5EAB"></i>
+          <i class="fa-brands fa-instagram icon adjustable_text high-contrast" style="color: #00771D"></i>
+          <i class="fa-brands fa-twitter icon adjustable_text high-contrast" style="color: #FFC700"></i>
+        </div>
+        <div class="infos">
+          <div class="email info">
+            <i style="color: #992F8F;" class="fa-solid fa-envelope adjustable_text"></i>
+            <p style="color: #992F8F;" class="adjustable_text">info.cancer@gmail.com</p>
+          </div>
+          <div class="phone info">
+            <i style="color: #EC5101;" class="fa-solid fa-phone adjustable_text"></i>
+            <p style="color: #EC5101;" class="adjustable_text">+91 999999999</p>
+          </div>
+        </div>
+
+
+          </div>
+      <div class="links-menu">
+          <div class="links-toggle"><i class="fa-solid fa-link"></i></div>
+          <li style="--i:2;">
+              <a href=""><i class="fa-brands fa-instagram" style="color: #FF4343; font-size: 35px;"></i></a>
+          </li>
+          <li style="--i:3;">
+              <a href=""><i class="fa-brands fa-facebook" style="color: #1F5EAB; font-size: 35px;"></i></a>
+          </li>
+          
+          <li style="--i:4;">
+              <a href=""><i class="fa-brands fa-twitter" style="color: #FFC700 ; font-size: 35px;"></i></a>
+          </li>
       </div>
-      <div class="links">
-        <ul>
-          <li class="links-list">
-            <a href="./index.html">Home</a>
-          </li>
-          <li class="links-list">
-            <a href="#">About Us</a>
-          </li>
-          <li class="links-list">
-            <a href="#">All About Cancer</a>
-          </li>
-          <li class="links-list">
-            <a class="dropbtn" href="#">Services</a>
-            <!-- <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div> -->
-          </li>
-        </ul>
-      </div>
-      <div class="contact-details">
-        <p>+91 999999999</p>
-        <button>Join Now</button>
-      </div>
+  
+      <script>
+          let toggle = document.querySelector(".links-toggle");
+          let menu = document.querySelector(".links-menu");
+          toggle.onclick = function() {
+              menu.classList.toggle("active");
+          }
+      </script> 
+    <div class="wrapper grayscale">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+        <div class="logo"><a href="index.php">
+        
+          <!-- <img src="./includes/media/logo.png" alt="logo" class="logo-img high-contrast"/> -->
+          <img src=".//images/logo.png" alt="" class="logo-text-img">
+        </a></div>
+          <ul class="links">
+            <li><a href="./index.html" class="adjustable_text">Home</a></li>
+            <li><a href="./about.html" class="adjustable_text">About</a></li>
+            
+            <li>
+              <a href="#" class="desktop-link adjustable_text">Support & Resources</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Support & Resources</label>
+              <ul>
+                <li><a href="whatis.html" class="adjustable_text">What is Childhood Cancer?</a></li>
+                <li><a href="howis.html" class="adjustable_text">How is Childhood Cancer Treated?</a></li>
+                <li><a href="typesofcancer.html" class="adjustable_text">Types of Childhood Cancer</a></li>
+                <li><a href="whydo.html" class="adjustable_text">Why do Children get cancer?</a></li>
+                <!-- <li><a href="groupActivties.php" class="adjustable_text">Why do Children gets Cancer?</a></li>
+                <li><a href="lifestyleAndCareer.php" class="adjustable_text">Life Style and Career Development</a></li>
+                <li><a href="inHomeServices.php" class="adjustable_text">In Home Services</a></li> -->
+              </ul>
+            </li>
+            <!-- <li>
+              <a href="#" class="desktop-link" class="adjustable_text">Careers</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features" class="adjustable_text">Careers</label>
+              <ul>
+                <li><a href="workWithUsMain.php" class="adjustable_text">Work With Us</a></li>
+                <li><a href="volunteer.php" class="adjustable_text">Volunteer</a></li>
+              </ul>
+            </li>
+            <li><a href="blogs.php" class="adjustable_text">Blogs</a></li> -->
+            <li><a href="contact.php" class="adjustable_text">Contact</a></li>
+          </ul>
+        </div>
+        <!-- <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Type Something to Search..." required>
+          <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+        </form> -->
+      </nav>
     </div>
-    
-
-
-    
-  </body>
+</body>
 </html>

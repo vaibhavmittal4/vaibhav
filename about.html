@@ -2,41 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Irish+Grover&family=Righteous&display=swap" rel="stylesheet">
+          
+    <script src="https://kit.fontawesome.com/a862feff0b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="navbar.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+      
+    <script src="./js/index.js" defer></script>
+    <script>
+          $(function () {
+            $("#navbar").load("nav.html");
+          });
+        
+          </script>
+          
 </head>
 <body>
-    <div id="mainabout">
-        <div id="about">
-            <div id="bg"></div>
-                <div id="sec">
-                    <div id="sec1">
-                        <div id="dbg">
+    <div id="navbar"></div>
 
-                        </div>
-                        <img src="./../images/about1.png" id="dc">
-                    </div>
-                    <div id="sec2main">
-                    <div id="sec2">
-                        <div id="flex1">
-                            <div class="v" id="v1"></div>                       
-                            <p id="head">About Us</p>
-                            <div class="v" id="v2"></div>
-                        </div>
-                        <p>
-                            Empowering children with cancer. Providing emotional support, medical care, education, 
-                            and financial assistance. Dedicated team of 
-                            doctors, nurses, counselors, and volunteers. 
-                            Ensuring no child fights alone. Bringing smiles,
-                            hope, and strength to families. Making a difference in their lives. Our mission is to conquer 
-                            childhood cancer with love and compassion.
+    <div id="abt_main">
+        <div id="abt">
+            <div id="head">
+                <h1>ABOUT<br>
+                    US</h1>
+            </div>
+
+            <div id="info">
+                <div id="content">
+                    <div class="c">
+                        <h3 id="heading">
+                            Emotional Support :
+                        </h3>
+                        <p id="con">
+                            We believe in the power of emotional well-being during the cancer journey. Our dedicated counselors are here to provide a nurturing and safe environment, offering guidance, comfort, and encouragement to both children and their families. We organize support groups, therapeutic activities, and individual counseling sessions to ensure that no one ever feels alone in their struggle.
                         </p>
-                        <button id="lm">Learn More</button>
-                    </div></div>
+                    </div>
+
+                    <div class="c">
+                        <h3 id="heading">
+                            Education & Resources:                        </h3>
+                        <p id="con">
+                            Knowledge is power, especially when facing a battle like cancer. We provide educational resources to help families better understand the disease, treatment options, and possible side effects. Our goal is to empower families with information, enabling them to make informed decisions and actively participate in their child's care.</p>
+                    </div>
+
+
+
+                    <div class="c">
+                        <h3 id="heading">
+                            Medical Care :                        </h3>
+                        <p id="con">
+                            Our skilled medical team works closely with renowned pediatric oncologists to ensure that the children receive the best possible medical care. From diagnosis to treatment and beyond, we are committed to providing comprehensive healthcare services tailored to the specific needs of each child.</p>
+                    </div>
+
+
+
+                    <div class="c">
+                        <h3 id="heading">
+                            Financial Assistance:                        </h3>
+                        <p id="con">
+                            We understand that the financial burden of cancer treatment can be overwhelming. Our organization works diligently to provide financial assistance for medical bills, transportation, and other related expenses. We believe that no family should have to choose between their child's health and their financial stability.                        </p>
+                    </div>
                 </div>
-            
+
+
+                <!-- <div id="imgss">
+                    <img src="images/abt - Copy.png">
+                    <img src="images/abt.png">
+
+                </div> -->
+            </div>
         </div>
     </div>
 </body>

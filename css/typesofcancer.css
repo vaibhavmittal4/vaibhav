@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Kanit&family=Marcellus&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.upper-typesofcancer{
+    border: px solid red;
+    height:700px;
+    position: relative;
+    top: 0px;
+    background: url(./../images/tv3_cleanup.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+.typesofcancer-heading{
+    border: px solid red;
+    position: relative;
+    top: 30px;
+    left: 50px;
+
+    /* FONTS */
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    color: #2A313B;
+}
+
+.typesofcancer-captions{
+    border: px solid red;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 90%;
+
+    /* FONTS */
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #858D91;
+}
+
+.typesofcancer-grid{
+    border: px solid red;
+    position: relative;
+    top: -50px;
+    left: 60%;
+    transform: translateX(-60%);
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 100px;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 22em;
+    max-width: 80%;
+    padding: 2em 0;
+    background: #333;
+    box-shadow: 0 0 6px 0 rgba(32, 32, 36, .12);
+    transition: all 0.35s ease;
+    /* border: 1px solid red; */
+    height: auto;
+}
+.card::before, .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    height: 4px;
+}
+.card::before {
+    width: 0;
+    opacity: 0;
+    transition: opacity 0 ease, width 0 ease;
+    transition-delay: 0.5s;
+}
+.card::after {
+    width: 100%;
+    background: #333;
+    transition: width 0.5s ease;
+}
+.card .content {
+    width: 18em;
+    max-width: 80%;
+    /* border: 1px solid red; */
+}
+.card .logo {
+    /* margin: 0 0 1em; */
+    width: 15.625em;
+    transition: all 0.35s ease;
+}
+.card h6 {
+    color: #999;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.card .hover_content {
+    overflow: hidden;
+    max-height: 0;
+    transform: translateY(1em);
+    transition: all 0.55s ease;
+}
+.card .hover_content p {
+    margin: 0em 0 0;
+    color: #e7e7e7;
+    line-height: 1.2em;
+}
+.card:hover {
+    width: 24em;
+    box-shadow: 0 10px 20px 0 rgba(32, 32, 36, .12);
+}
+.card:hover::before {
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease, width 0.5s ease;
+    transition-delay: 0;
+}
+.card:hover::after {
+    width: 0;
+    opacity: 0;
+    transition: width 0 ease;
+}
+.card:hover .logo {
+    margin-bottom: 0.5em;
+}
+.card:hover .hover_content {
+    max-height: 20em;
+    transform: none;
+}
+
+.typesofcancer-logo-typ{
+    border: 1px solid red;
+    width: 80px;
+    height: 80px;
+    align-self: center ;
+}
+
+.typesofcancer-typ-heading{
+    align-self: center;
+    justify-self: center;
+    /* FONTS */
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+@media screen and (max-width:621px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .upper-typesofcancer{
+        border: px solid red;
+        height:450px;
+    
+        background: url(./../images/tv3_cleanupmobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center ;
+    }
+    
+    .typesofcancer-heading{
+        border: px solid red;
+        position: relative;
+        top: 40px;
+        left: 10px;
+    
+        /* FONTS */
+        font-family: 'Righteous', cursive;
+        font-size: 30px;
+        color: #2A313B;
+    }
+    
+    .typesofcancer-captions{
+        border: px solid red;
+        position: absolute;
+        top: 80px;
+        left: 10px;
+        width: 95%;
+    
+        /* FONTS */
+        
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: #858D91;
+    }
+    
+    .typesofcancer-grid{
+        border: px solid red;
+        position: relative;
+        top: -50px;
+        left: 70%;
+        transform: translateX(-70%);
+        width: 80%;
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto auto;
+        row-gap: 20px;
+    }
+    
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 22em;
+        max-width: 80%;
+        padding: 2em 0;
+        background: #333;
+        box-shadow: 0 0 6px 0 rgba(32, 32, 36, .12);
+        transition: all 0.35s ease;
+    }
+    .card::before, .card::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        height: 4px;
+    }
+    .card::before {
+        width: 0;
+        opacity: 0;
+        transition: opacity 0 ease, width 0 ease;
+        transition-delay: 0.5s;
+    }
+    .card::after {
+        width: 100%;
+        background: #333;
+        transition: width 0.5s ease;
+    }
+    .card .content {
+        width: 18em;
+        max-width: 80%;
+    }
+    .card .logo {
+        /* margin: 0 0 1em; */
+        width: 13.625em;
+        transition: all 0.35s ease;
+    }
+    .card h6 {
+        color: #999;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0;
+        letter-spacing: 2px;
+    }
+    .card .hover_content {
+        overflow: hidden;
+        max-height: 0;
+        transform: translateY(1em);
+        transition: all 0.55s ease;
+    }
+    .card .hover_content p {
+        margin: 1.5em 0 0;
+        color: #e7e7e7;
+        line-height: 1.4em;
+    }
+    .card:hover {
+        width: 24em;
+        box-shadow: 0 10px 20px 0 rgba(32, 32, 36, .12);
+    }
+    .card:hover::before {
+        width: 100%;
+        opacity: 1;
+        transition: opacity 0.5s ease, width 0.5s ease;
+        transition-delay: 0;
+    }
+    .card:hover::after {
+        width: 0;
+        opacity: 0;
+        transition: width 0 ease;
+    }
+    .card:hover .logo {
+        margin-bottom: 0.5em;
+    }
+    .card:hover .hover_content {
+        max-height: 20em;
+        transform: none;
+    }
+    
+    .typesofcancer-logo-typ{
+        border: 1px solid red;
+        width: 80px;
+        height: 80px;
+        align-self: center ;
+    }
+    
+    .typesofcancer-typ-heading{
+        align-self: center;
+        justify-self: center;
+        /* FONTS */
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+}
+@media screen and (min-width:621px) and (max-width:1035px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .upper-typesofcancer{
+        border: px solid red;
+        height:500px;
+    
+        background: url(./../images/tv3_cleanup.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center ;
+    }
+    
+    .typesofcancer-heading{
+        border: px solid red;
+        position: relative;
+        top: 30px;
+        left: 30px;
+    
+        /* FONTS */
+        font-family: 'Righteous', cursive;
+        font-size: 40px;
+        color: #2A313B;
+    }
+    
+    .typesofcancer-captions{
+        border: px solid red;
+        position: absolute;
+        top: 100px;
+        left: 30px;
+        width: 95%;
+    
+        /* FONTS */
+        
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #858D91;
+    }
+    
+    .typesofcancer-grid{
+        border: px solid red;
+        position: relative;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
+        row-gap: 50px;
+    }
+    
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 22em;
+        max-width: 80%;
+        padding: 2em 0;
+        background: #333;
+        box-shadow: 0 0 6px 0 rgba(32, 32, 36, .12);
+        transition: all 0.35s ease;
+    }
+    .card::before, .card::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        height: 4px;
+    }
+    .card::before {
+        width: 0;
+        opacity: 0;
+        transition: opacity 0 ease, width 0 ease;
+        transition-delay: 0.5s;
+    }
+    .card::after {
+        width: 100%;
+        background: #333;
+        transition: width 0.5s ease;
+    }
+    .card .content {
+        width: 18em;
+        max-width: 80%;
+    }
+    .card .logo {
+        /* margin: 0 0 1em; */
+        width: 14.625em;
+        transition: all 0.35s ease;
+    }
+    .card h6 {
+        color: #999;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0;
+        letter-spacing: 2px;
+    }
+    .card .hover_content {
+        overflow: hidden;
+        max-height: 0;
+        transform: translateY(1em);
+        transition: all 0.55s ease;
+    }
+    .card .hover_content p {
+        margin: 1.5em 0 0;
+        color: #e7e7e7;
+        line-height: 1.4em;
+    }
+    .card:hover {
+        width: 24em;
+        box-shadow: 0 10px 20px 0 rgba(32, 32, 36, .12);
+    }
+    .card:hover::before {
+        width: 100%;
+        opacity: 1;
+        transition: opacity 0.5s ease, width 0.5s ease;
+        transition-delay: 0;
+    }
+    .card:hover::after {
+        width: 0;
+        opacity: 0;
+        transition: width 0 ease;
+    }
+    .card:hover .logo {
+        margin-bottom: 0.5em;
+    }
+    .card:hover .hover_content {
+        max-height: 20em;
+        transform: none;
+    }
+    
+    .typesofcancer-logo-typ{
+        border: 1px solid red;
+        width: 80px;
+        height: 80px;
+        align-self: center ;
+    }
+    
+    .typesofcancer-typ-heading{
+        align-self: center;
+        justify-self: center;
+        /* FONTS */
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+}
