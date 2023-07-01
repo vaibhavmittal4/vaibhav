@@ -23,11 +23,11 @@
 
 .wrapper {
     background: #fff;
-    position: sticky;
-    top: 0px;
+    /* position: sticky;
+    top: 0px; */
     width: 100%;
-    z-index: 22;
-    box-shadow: 0 4px 10px -8px #000000ad;
+    z-index: 72;
+    box-shadow: 0 4px 20px -8px #000000ad;
 }
 
 .wrapper nav {
@@ -38,6 +38,8 @@
     align-items: center;
     justify-content: start;
     height: 95px;
+    z-index: 72;
+    
 }
 
 nav .content {
@@ -499,7 +501,7 @@ nav .content .links {
 }
 
 .info p {
-    width: max-content;
+    width: 300px;
     padding-left: 0.5vw;
     letter-spacing: 2px;
     font-weight: 400;
@@ -507,6 +509,7 @@ nav .content .links {
     font-weight: bold;
     padding-bottom: 0px !important;
     /* border: 1px solid black; */
+    font-family: 'poppins';
     
 }
 

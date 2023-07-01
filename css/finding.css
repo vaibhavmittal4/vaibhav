@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#find{
+    background: url(./../images/can3.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+#hi{
+    font-family: 'Righteous', cursive;
+    color: #F8A52B;
+    opacity: 80%;
+    font-size: 110px;
+    line-height: 110px;
+}
+#ct{
+    font-family: 'Righteous', cursive;
+    color:#ffffff ;
+    font-size: 110px;
+    line-height:110px;
+}
+#upper{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    width: 80%;
+    position: relative;
+    left: 5%;
+    /* border: 1px solid black; */
+    /* font-family: 'Inter', sans-serif;
+font-family: 'Irish Grover', cursive;
+font-family: 'Reem Kufi Ink', sans-serif;
+font-family: 'Righteous', cursive; */
+}

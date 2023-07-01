@@ -65,3 +65,30 @@ setInterval(() => {
     i = 1;
   }
 }, 5000);
+
+
+function on(){
+  console.log(window.scrollY);
+}
+
+
+
+// Get the navbar
+
+
+const navbar = document.getElementsByClassName("wrapper");
+
+
+
+
+
+function myFunction() {
+  if (window.scrollY >= 54) {
+    navbar.style.position="fixed";
+    navbar.style.top="0px";
+    // header.style.display="none"
+  } else {
+    navbar.style.position="static";
+    navbar.style.top="50px";
+  }
+}
