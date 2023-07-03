@@ -101,6 +101,7 @@
         background: url(./../images/whydopsmobile_cleanup-transformed.png);
         background-size: cover;
         background-position: center;
+        margin-top: 100px;
     }
     
     .whydoupper-paradiv{
@@ -196,6 +197,7 @@
         background: url(./../images/whydops_cleanup-transformed.png);
         background-size: cover;
         background-position: center;
+        margin-top: 100px;
     }
     
     .whydoupper-paradiv{

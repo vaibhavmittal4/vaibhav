@@ -174,7 +174,7 @@
     .upper-typesofcancer{
         border: px solid red;
         height:450px;
-    
+        margin-top: 100px;
         background: url(./../images/tv3_cleanupmobile.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -336,7 +336,7 @@
     .upper-typesofcancer{
         border: px solid red;
         height:500px;
-    
+        margin-top: 100px;
         background: url(./../images/tv3_cleanup.png);
         background-size: cover;
         background-repeat: no-repeat;
