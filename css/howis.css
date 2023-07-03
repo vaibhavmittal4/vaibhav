@@ -100,8 +100,13 @@ z-index: 0;
 }
 @media screen and (max-width:500px){
     #howis{
-        margin-top: 100px;
+        margin-top: 0px;
         /* border: 1px solid black; */
+        position: relative;
+    }
+    #howismain{
+        position: relative;
+        top:90px;
     }
     #text{
         /* border: 1px solid black; */
