@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500&family=Irish+Grover&family=Kanit&family=Marcellus&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Reem+Kufi+Ink&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.aft-treatment-bg{
+    /* border: 1px solid red; */
+    height: 700px;
+    background: url(./../images/aft-treatment-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.aft-treatment-headdiv{
+    /* border: 1px solid red; */
+    width: 50%;
+    position: relative;
+    left: 150px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aft-treatment-heading1{
+    /* border: 1px solid red; */
+
+    /* FONTS */
+    font-family: 'Righteous', cursive;
+    font-size: 80px;
+    color: #ED7A2E;
+}
+
+.aft-treatment-heading2{
+    /* border: 1px solid red; */
+
+    /* FONTS */
+    font-family: 'Righteous', cursive;
+    font-size: 80px;
+    color: #08266C;
+}
+
+.aft-treatment-subheading{
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    width: 70%;
+    /* FONTS */
+    font-family: 'Irish Grover', cursive;
+    font-size: 22px;
+}
+
+.aft-treatment-bottom{
+    /* border: 1px solid red; */
+    height: 400px;
+    background-color: #080D20;
+}
+
+.aft-treatment-grid{
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 400px;
+    margin-top: -50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+}
+
+.aft-treatment-container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: left;
+}
+
+.aft-treatment-container-heading{
+    position: relative;
+    left: 20px;
+    top: 30px;
+    /* FONTS */
+    font-family: 'Irish Grover', cursive;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.aft-treatment-container-content{
+    width: 90%;
+    position: relative;
+    top: 60px;
+    left: 20px;
+    /* FONTS */
+    font-family: 'Reem Kufi Ink', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.aft-treatment-container:nth-child(1){
+    background-color: #C2963D;
+}
+
+.aft-treatment-container:nth-child(2){
+    background-color: #D8DDE3;
+}
+
+.aft-treatment-container:nth-child(3){
+    background-color: #08266C;
+}
+
+.aft-treatment-container:nth-child(2) .aft-treatment-container-content{
+    color: #2A2C31;
+}
+
+
+.aft-treatment-container:nth-child(2) .aft-treatment-container-heading{
+    color: #2A2C31;
+}
+
+@media screen and (max-width: 631px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .aft-treatment-bg{
+        /* border: 1px solid red; */
+        height: 650px;
+        background: url(./../images/aft-treatment-bg-mobile.png);
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    .aft-treatment-headdiv{
+        /* border: 1px solid red; */
+        width: 90%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .aft-treatment-heading1{
+        /* border: 1px solid red; */
+    
+        /* FONTS */
+        font-family: 'Righteous', cursive;
+        font-size: 40px;
+        color: #ED7A2E;
+    }
+    
+    .aft-treatment-heading2{
+        /* border: 1px solid red; */
+    
+        /* FONTS */
+        font-family: 'Righteous', cursive;
+        font-size: 40px;
+        color: #08266C;
+    }
+    
+    .aft-treatment-subheading{
+        /* border: 1px solid red; */
+        margin-top: 20px;
+        width: 100%;
+        /* FONTS */
+        font-family: 'Irish Grover', cursive;
+        font-size: 18px;
+    }
+    
+    .aft-treatment-bottom{
+        /* border: 1px solid red; */
+        height: 1030px;
+        background-color: #080D20;
+    }
+    
+    .aft-treatment-grid{
+        /* border: 1px solid red; */
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 1000px;
+        margin-top: -50px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+    
+    .aft-treatment-container{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        align-items: left;
+    }
+    
+    .aft-treatment-container-heading{
+        position: relative;
+        left: 10px;
+        top: 30px;
+        /* FONTS */
+        font-family: 'Irish Grover', cursive;
+        font-size: 28px;
+        color: #ffffff;
+    }
+    
+    .aft-treatment-container-content{
+        width: 90%;
+        position: relative;
+        top: 60px;
+        left: 10px;
+        /* FONTS */
+        font-family: 'Reem Kufi Ink', sans-serif;
+        font-size: 16px;
+        color: #ffffff;
+    }
+    
+    .aft-treatment-container:nth-child(1){
+        background-color: #C2963D;
+    }
+    
+    .aft-treatment-container:nth-child(2){
+        background-color: #D8DDE3;
+    }
+    
+    .aft-treatment-container:nth-child(3){
+        background-color: #08266C;
+    }
+    
+    .aft-treatment-container:nth-child(2) .aft-treatment-container-content{
+        color: #2A2C31;
+    }
+    
+    
+    .aft-treatment-container:nth-child(2) .aft-treatment-container-heading{
+        color: #2A2C31;
+    }
+    
+}
+
+
+@media screen and (min-width: 631px) and (max-width: 1035px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .aft-treatment-bg{
+        /* border: 1px solid red; */
+        height: 500px;
+        background: url(./../images/aft-treatment-bg.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .aft-treatment-headdiv{
+        /* border: 1px solid red; */
+        width: 80%;
+        position: relative;
+        left: 30px;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .aft-treatment-heading1{
+        /* border: 1px solid red; */
+    
+        /* FONTS */
+        font-family: 'Righteous', cursive;
+        font-size: 50px;
+        color: #ED7A2E;
+    }
+    
+    .aft-treatment-heading2{
+        /* border: 1px solid red; */
+    
+        /* FONTS */
+        font-family: 'Righteous', cursive;
+        font-size: 50px;
+        color: #08266C;
+    }
+    
+    .aft-treatment-subheading{
+        /* border: 1px solid red; */
+        margin-top: 30px;
+        width: 70%;
+        /* FONTS */
+        font-family: 'Irish Grover', cursive;
+        font-size: 20px;
+    }
+    
+    .aft-treatment-bottom{
+        /* border: 1px solid red; */
+        height: 1000px;
+        background-color: #080D20;
+    }
+    
+    .aft-treatment-grid{
+        /* border: 1px solid red; */
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 900px;
+        margin-top: -50px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+    
+    .aft-treatment-container{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        align-items: left;
+    }
+    
+    .aft-treatment-container-heading{
+        position: relative;
+        left: 20px;
+        top: 30px;
+        /* FONTS */
+        font-family: 'Irish Grover', cursive;
+        font-size: 35px;
+        color: #ffffff;
+    }
+    
+    .aft-treatment-container-content{
+        width: 90%;
+        position: relative;
+        top: 60px;
+        left: 20px;
+        /* FONTS */
+        font-family: 'Reem Kufi Ink', sans-serif;
+        font-size: 20px;
+        color: #ffffff;
+    }
+    
+    .aft-treatment-container:nth-child(1){
+        background-color: #C2963D;
+    }
+    
+    .aft-treatment-container:nth-child(2){
+        background-color: #D8DDE3;
+    }
+    
+    .aft-treatment-container:nth-child(3){
+        background-color: #08266C;
+    }
+    
+    .aft-treatment-container:nth-child(2) .aft-treatment-container-content{
+        color: #2A2C31;
+    }
+    
+    
+    .aft-treatment-container:nth-child(2) .aft-treatment-container-heading{
+        color: #2A2C31;
+    }
+    
+}

@@ -521,3 +521,29 @@
 
 
 
+
+
+.content .logo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black */
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Kanit&family=Marcellus&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap');
+
+.content .logo a img {
+    display: flex;
+}
+
+.logo-text-text-2{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Righteous' , sans-serif;
+    margin-top: 15px;
+    margin-left: 0px;
+    font-size: 19px;
+}
