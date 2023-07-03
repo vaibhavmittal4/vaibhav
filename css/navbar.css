@@ -62,6 +62,7 @@ nav .content .links {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* border: 1px solid black */
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Kanit&family=Marcellus&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap');
 
@@ -85,7 +86,7 @@ nav .content .links {
 }
 .content .links li {
     list-style: none;
-    line-height: 70px;
+    line-height: 90px;
     text-align: center;
 }
 
@@ -245,7 +246,7 @@ nav .content .links {
 
 /* Responsive code start */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 524px) {
     .wrapper nav {
         min-width: 100%;
         padding: 0 20px; 
@@ -269,7 +270,7 @@ nav .content .links {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1056px) {
     nav {
         padding: 0 !important;
     }
@@ -394,6 +395,78 @@ nav .content .links {
         /* border: 1px solid black; */
     }
 }
+@media screen and (min-width:901px) and (max-width:1035px){
+    nav .content .links {
+        display: block;
+        position: fixed;
+        background: white;
+        height: 100%;
+        width: 100%;
+        top: 140px;
+        left: -100%;
+        margin-left: 0;
+        max-width: 100%;
+        overflow-y: hidden;
+        padding-bottom: 100px;
+        transition: all 0.3s ease;
+        /* border: 1px solid black; */
+    }
+    .content .logo a {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 1px solid black */
+    }
+    .wrapper .search-icon,
+.wrapper .menu-icon {
+    color: #000;
+    font-size: 35px;
+    cursor: pointer;
+    line-height: 70px;
+    width: 70px;
+    text-align: left;
+    margin-left: -60px;
+}
+}
+@media screen and (min-width:1036px) and (max-width:1056px){
+    nav .content .links {
+        display: block;
+        position: fixed;
+        background: white;
+        height: 100%;
+        width: 100%;
+        top: 145px;
+        left: -100%;
+        margin-left: 0;
+        max-width: 100%;
+        overflow-y: hidden;
+        padding-bottom: 100px;
+        transition: all 0.3s ease;
+        /* border: 1px solid black; */
+    }
+    .content .logo a {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 1px solid black */
+    }
+    .wrapper .search-icon,
+.wrapper .menu-icon {
+    color: #000;
+    font-size: 35px;
+    cursor: pointer;
+    line-height: 70px;
+    width: 70px;
+    text-align: left;
+    margin-left: -60px;
+}
+}
 .wrapper{
     z-index: 1000;
 }
@@ -414,62 +487,7 @@ nav .content .links {
 }
 
 
-/* .links-mobile{
-    width: 50%;
-    margin: 0 auto;
-    padding-left: 2%;
-    border-top: 3px solid var(--second-color);
-    transition: 1s;
-    display: none !important;
-}
-.links-mobile a{
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 3vw;
-}
-.links-mobile .link{
-    text-align: center;
-    height: 20%;
-}
 
-.links-mobile .link .special-dropdown {
-    height: 100%;
-}
-.links-mobile .link .special-dropdown a{
-    font-size: 2.7vw;
-}
-.links-mobile .link .special-dropdown .special-dropbtn {
-    padding-top: 0;
-}
-
-
-.links-mobile .link .dropdown-content .special-dropdown2{
-    height: 100%;
-}
-
-.links-mobile .link .dropdown-content .special-dropdown2 a {
-    font-size: 2.7vw;
-}
-
-.links-mobile .link .dropdown-content .special-dropdown2 .special-dropbtn2 {
-    padding-top: 0;
-}
-
-
-.links-mobile hr{
-    color: #7b7b7b;
-    width: 60%;
-    height: 3px;
-    background: #7b7b7b;
-    margin: 4vh 20%;
-}
-
-.hamburger{
-    display: none;
-}
-
-*/
 
 .header {
     display: flex;
@@ -536,21 +554,25 @@ display: flex;
     
 }
 
-@media only screen and (max-width: 1035px) {
+@media only screen and (max-width: 1056px) {
     .header {
-        flex-direction:row-reverse ;
-        padding: 0 !important;
+        flex-direction:row;
+        padding: 2.5vh !important;
+        align-items: center;
+        justify-content: center;
     }
 
     .header .icons {
         width: 20%;
         padding: 10px;
         /* border: 1px solid black; */
+        display: none;
     }
     .header .fa-solid{
         /* border: 1px solid black; */
-        margin-left:20px;
-        font-size: 14px;
+        margin-left:25px;
+        margin-right: 15px;
+        font-size: 17px;
     }
     .header .icons .icon {
         font-size: 25px;
@@ -558,16 +580,17 @@ display: flex;
     }
 
     .header .infos {
-        width: 55%;
-        justify-content: right;
+        width: max-content;
+        justify-content: center;
         /* border: 1px solid black; */
-        justify-content:center;
-        align-items: end;
+        justify-content:space-between;
+        align-items: center;
         /* border: 1px solid black; */
+        display: static;
     }
 
     .header .infos p{
-        font-size: 14px;
+        font-size: 17px;
         
     }
     .info p {
@@ -582,281 +605,14 @@ display: flex;
         
     }
 
-
-
-
-
-
-    /* 
-    
-    .small-text {
-        color: #f84d4f;
-        font-size: 2vh;
-        font-style: italic;
-    }
-    
-    
-    
-   
-    
-    .infos {
-        display: flex;
-        width: 42%;
-        justify-content: space-between;
-        width: ;
-    }
-    
-    .info {
-        display: flex;
-        width: 100%;
-        justify-content: right;
-        align-items: center;
-        color: var(--second-color);
-        margin-left: 2vw;
-    }
-    
-    .info i {
-        font-size: 18px;
-    }
-    
-    .info p {
-        width: max-content;
-        padding-left: 0.5vw;
-        letter-spacing: 2px;
-        font-weight: 400;
-        margin-bottom: 0;
-        font-weight: bold;
-        padding-bottom: 0px !important;
-        
-    } */
-
-
-    
+  
 }
-@media screen and (max-width:900px){
+/* @media screen and (max-width:1056px){
     .header {
         display: none;
-        justify-content: space-between;
-        background: #F2F7F9;
+        justify-content: center;
         align-items: center;
         padding: 1vh 6vw;
     }
-}
-
-/*
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 12vh;
-    padding: 0vh 6vw;
-    position: sticky;
-    z-index: 10;
-    background: white;
-    top: -1px;
-    width: 100%;
-}
-
-nav .logo{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    width: 49vw;
-    font-size: 4vh;
-    color: var(--main-color);
-    font-weight: 500;
-}
-
-nav .logo .logo-img{
-    width: 10vh;
-    margin-right: 0.5vw;
-}
-
-
-
-nav .links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-}
-
-.navlinks{
-    text-decoration: none;
-    font-weight: 400;
-    color: black;
-    font-size: 19px;
-    width: max-content;
-    display: inline-block;
-    position: relative;
-    margin-right: 1vw;
-    margin-left: 0.1vw;
-}
-.navlinks::after{    
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--main-color);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-.navlinks:hover::after { 
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-.btn{
-    background: var(--main-color);
-    color: white !important;
-    font-weight: 500;
-    padding: 6px 28px;
-    border-radius: 3px;
-    text-decoration: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-  }
-.dropdown2 {
-    float: left;
-    overflow: hidden;
-    display: flex;
-  }
-
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: black;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones
-    margin: 0; /* Important for vertical align on mobile phones *
-  }
-  .dropdown2 .dropbtn {
-    font-size: 19px;
-    border: none;
-    outline: none;
-    color: black;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones 
-    margin: 0; /* Important for vertical align on mobile phones 
-  }
-  /* Dropdown content (hidden by default) 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown-content2 {
-    display: none;
-    position: absolute;
-    left: 100px;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown 
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  .dropdown-content2 a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover 
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  .dropdown-content2 a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Show the dropdown menu on hover 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .dropdown2:hover .dropdown-content2 {
-    display: block;
-  }
-
-@media only screen and (max-width: 1080px) {
-
-    .header .icons {
-        width: 20%;
-    }
-    .header .icons .icon{
-        font-size: 2vw;
-    }
-
-    .infos{
-        width: max-content;
-    }
-
-    .info i{
-        font-size: 2vw;
-    }
-
-    .info p{
-        font-size: 1.5vw;
-    }
-    nav .links{
-        display: none;
-    }
-    nav{
-        height: 13vh;
-    }
-    .hamburger {
-        width: 5vw;
-        cursor: pointer;
-        display: block;
-        height: 3vh;
-    }
-    .hamburger .hamburger-icon {
-        font-size: 4vh;
-    }
-    
-   .active-nav{
-        display: block!important;
-        position: sticky;
-        top: 12.8vh;
-        z-index: 10;
-        width: 80%;
-        background: white;
-        height: 40vh;
-    }
-
-    .dropdown {
-        float: none;
-    } 
-    .dropdown2{
-        float: none;
-    }
-
-}
-@media(max-width: 530px){
-    nav .logo{
-        font-size: 2vh;
-        width :87vw;
-    }
 } */
+

@@ -62,7 +62,7 @@
     font-size: 2em;
     transition: transform 1.25s;
 }
-@media(max-width: 900px){
+@media(max-width: 1056px){
     .links-menu{
         display: flex;
     }

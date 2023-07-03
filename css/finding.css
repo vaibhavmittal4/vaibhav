@@ -1,38 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500&family=Kanit&family=Marcellus&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Reem+Kufi+Ink&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap');
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
-#find{
-    background: url(./../images/can2.png);
-    width: 100%;
-    background-repeat: no-repeat;
+
+.finding-bg{
+    /* border: 1px solid red; */
+    height: 700px;
+    background: url(./../images/alkdsjfklasdjfsad_cleanup.png);
     background-size: cover;
-    height: auto;
-    width: 100%;
-    height: 250vh;
+    background-repeat: no-repeat;
 }
-#hi{
+
+.finding-bachabachi-img{
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 50%;
+    float: right;
+    background: url(./../images/finding-bachabachi-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.finding-cancer-headingdiv{
+    /* border: 1px solid red; */
+    width: 30%;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.finding-cancer-heading{
+    /* FONTS */
+
     font-family: 'Righteous', cursive;
+    font-size: 90px;
     color: #F8A52B;
-    opacity: 80%;
-    font-size: 110px;
-    line-height: 110px;
 }
-#ct{
-    font-family: 'Righteous', cursive;
-    color:#ffffff ;
-    font-size: 110px;
-    line-height:110px;
+
+.finding-cancer-heading2{
+    color: #ffffff;
 }
-#upper{
+
+.finding-cancer-grid{
+    /* border: 1px solid red; */
+    height: 550px;
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: auto auto;
+}
+
+.finding-cancer-grid-left{
+    /* border: 1px solid red; */
+    background-color: #102952;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.finding-cancer-grid-right{
+    /* border: 1px solid red; */
+    background-color: #D8D2CD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* max-width: 50%; */
+    min-width: 50%;
+}
+
+.finding-cancer-grid-span{
+    width: 80%;
+
+    /* FONTS */
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+    color: #D8D2CD;
+}
+
+.finding-cancer-grid-rightspan{
+    width: 80%;
+
+    /* FONTS */
+    font-family: 'Reem Kufi Ink', sans-serif;
+    font-size: 20px;
+    color: #102952;
+}
+
+@media screen and (max-width: 630px) {
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500&family=Kanit&family=Marcellus&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Reem+Kufi+Ink&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.finding-bg{
+    /* border: 1px solid red; */
+    height: 700px;
+    background: url(./../images/alkdsjfklasdjfsad_cleanup.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 80px;
+}
+
+.finding-bachabachi-img{
+    /* border: 1px solid red; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 90%;
+    float: right;
+    background: url(./../images/finding-bachabachi-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.finding-cancer-headingdiv{
+    /* border: 1px solid red; */
     width: 80%;
     position: relative;
-    left: 5%;
-    /* border: 1px solid black; */
-    /* font-family: 'Inter', sans-serif;
-font-family: 'Irish Grover', cursive;
-font-family: 'Reem Kufi Ink', sans-serif;
-font-family: 'Righteous', cursive; */
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.finding-cancer-heading{
+    /* FONTS */
+
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+    color: #F8A52B;
+    text-align: center;
+}
+
+.finding-cancer-heading2{
+    color: #ffffff;
+}
+
+.finding-cancer-grid{
+    /* border: 1px solid red; */
+    height: 700px;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto;
+}
+
+.finding-cancer-grid-left{
+    /* border: 1px solid red; */
+    background-color: #102952;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 10px;
+}
+
+.finding-cancer-grid-right{
+    /* border: 1px solid red; */
+    background-color: #D8D2CD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* max-width: 50%; */
+    min-width: 50%;
+    padding: 25px 10px;
+}
+
+.finding-cancer-grid-span{
+    width: 90%;
+
+    /* FONTS */
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+    color: #D8D2CD;
+}
+
+.finding-cancer-grid-rightspan{
+    width: 90%;
+
+    /* FONTS */
+    font-family: 'Reem Kufi Ink', sans-serif;
+    font-size: 18px;
+    color: #102952;
+}
+}
+
+@media screen and (min-width: 631px) and (max-width: 1035px) {
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500&family=Kanit&family=Marcellus&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Reem+Kufi+Ink&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.finding-bg{
+    /* border: 1px solid red; */
+    height: 550px;
+    background: url(./../images/alkdsjfklasdjfsad_cleanup.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.finding-bachabachi-img{
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 50%;
+    float: right;
+    background: url(./../images/finding-bachabachi-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.finding-cancer-headingdiv{
+    /* border: 1px solid red; */
+    width: 50%;
+    position: relative;
+    top: 150px;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.finding-cancer-heading{
+    /* FONTS */
+
+    font-family: 'Righteous', cursive;
+    font-size: 75px;
+    color: #F8A52B;
+}
+
+.finding-cancer-heading2{
+    color: #ffffff;
+}
+
+.finding-cancer-grid{
+    /* border: 1px solid red; */
+    height: 700px;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto;
+}
+
+.finding-cancer-grid-left{
+    /* border: 1px solid red; */
+    background-color: #102952;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.finding-cancer-grid-right{
+    /* border: 1px solid red; */
+    background-color: #D8D2CD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* max-width: 50%; */
+    min-width: 50%;
+}
+
+.finding-cancer-grid-span{
+    width: 80%;
+
+    /* FONTS */
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    color: #D8D2CD;
+}
+
+.finding-cancer-grid-rightspan{
+    width: 80%;
+
+    /* FONTS */
+    font-family: 'Reem Kufi Ink', sans-serif;
+    font-size: 20px;
+    color: #102952;
+}
 }

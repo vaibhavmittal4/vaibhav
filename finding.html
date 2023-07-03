@@ -5,21 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/finding.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Irish+Grover&family=Reem+Kufi+Ink&family=Righteous&display=swap" rel="stylesheet">
-
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+    
+  <script src="./js/index.js" defer></script>
+  <script>
+        $(function () {
+          $("#navbar").load("nav.html");
+        });
+        
+        
+    
+  </script>
 </head>
 <body>
-    <div id="find_main">
-        <div id="find">
-            <div id="upper">
-                <div id="text">
-                    <h1 id="hi">Finding Cancer</h1>
-                    <h1 id="ct">In Children</h1>
-                    <!-- <p>Childhood cancer is typically treated using a combination of different approaches, including surgery, chemotherapy, radiation therapy, targeted therapy, immunotherapy, and stem cell transplantation. </p> -->
-                </div>
-            </div>
+    <div id="navbar"></div>
+    <div class="finding-bg">
+        <div class="finding-bachabachi-img"></div> 
+        <div class="finding-cancer-headingdiv">
+            <span class="finding-cancer-heading">Finding Cancer</span>
+            <span class="finding-cancer-heading finding-cancer-heading2">In Children</span>
+        </div>
+    </div>
+
+    <div class="finding-cancer-grid">
+        <div class="finding-cancer-grid-left">
+            <span class="finding-cancer-grid-span">Finding cancer in children involves a combination of factors, including recognizing signs and symptoms, conducting medical evaluations, and utilizing diagnostic tests. Here are some key points to consider when discussing finding cancer in children:</span>
+        </div>
+        <div class="finding-cancer-grid-right">
+            <span class="finding-cancer-grid-rightspan">1. Signs and Symptoms: Many childhood cancers have specific signs and symptoms that may differ from those seen in adults. These can include unexplained weight loss, persistent pain, lumps or swelling, unusual bleeding or bruising, frequent infections, and changes in vision or eye appearance. </span>
+            <span class="finding-cancer-grid-rightspan">2. Medical Evaluation: When a child presents with symptoms that raise suspicion of cancer, a thorough medical evaluation is conducted. This typically involves a comprehensive medical history, physical examination, and laboratory tests to assess blood counts, organ function, and other relevant parameters.</span>
+            <span class="finding-cancer-grid-rightspan">3. Diagnostic Tests: To confirm or rule out cancer, specific diagnostic tests are performed.  Biopsies, where a small sample of tissue is collected for examination, are also crucial in diagnosing cancer and determining its type and characteristics.</span>
+            
         </div>
     </div>
 </body>
