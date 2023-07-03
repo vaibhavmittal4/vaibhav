@@ -3,11 +3,13 @@
     margin: 0;
 }
 #find{
-    background: url(./../images/can3.png);
+    background: url(./../images/can2.png);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: auto;
+    width: 100%;
+    height: 250vh;
 }
 #hi{
     font-family: 'Righteous', cursive;

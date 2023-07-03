@@ -498,8 +498,9 @@ nav .content .links {
 
 .infos {
     display: flex;
-    width: 42%;
+    width: 37%;
     justify-content: space-between;
+    /* border: 1px solid black; */
 }
 
 .info {
@@ -508,16 +509,23 @@ nav .content .links {
     justify-content: right;
     align-items: center;
     color: var(--second-color);
-    margin-left: 2vw;
+    /* margin-left: 5vw; */
 }
-
+.info:last-child{
+margin-left: 0vw;
+display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    color: var(--second-color);
+}
 .info i {
     font-size: 18px;
 }
 
 .info p {
-    width: 300px;
-    padding-left: 0.5vw;
+    width: fit-content;
+    padding-left: 0.2vw;
     letter-spacing: 2px;
     font-weight: 400;
     margin-bottom: 0;
