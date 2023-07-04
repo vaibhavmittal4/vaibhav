@@ -7,7 +7,7 @@
 #footer{
     background-color: #053065;
     color: #FFFFFF;
-    margin-top: 0px;
+    position: absolute;
 }
 #contents{
     display: flex;

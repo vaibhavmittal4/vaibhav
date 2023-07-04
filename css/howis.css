@@ -28,14 +28,14 @@ font-family: 'Righteous', cursive; */
 #hi{
     font-family: 'Righteous', cursive;
     color: #00569C;
-    font-size: 90px;
-    line-height: 90px;
+    font-size: 70px;
+    line-height: 70px;
 }
 #ct{
     font-family: 'Righteous', cursive;
     color:#F8A52B ;
-    font-size: 90px;
-    line-height:90px;
+    font-size: 70px;
+    line-height:70px;
 }
 #text p{
     font-size: 18px;
@@ -51,8 +51,9 @@ font-family: 'Righteous', cursive; */
 z-index: 0;
 }
 #up_img img{
-    width: 100%;
-    height: 450px;
+    width: 700px;
+    height: auto;
+    margin-top: 30px;
 }
 
 #lower img{
@@ -595,5 +596,6 @@ z-index: 0;
         
     }
 }
+
 
 
