@@ -524,6 +524,7 @@ h1 span:nth-child(15){
     /* border: 1px solid black; */
     font-family: 'poppins';
     font-size: 15px;
+	font-weight: bold;
 }
 @media only screen and (max-width: 1056px) {
     .header {
