@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/links.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="links-menu">
+      <div id="links-toggle"><i class="fa-solid fa-link"></i></div>
+      <li style="--i: 3">
+        <a href=""
+          ><i class="fa-brands fa-instagram" style="color: #ff4343"></i
+        ></a>
+      </li>
+      <li style="--i: 4">
+        <a href=""
+          ><i class="fa-brands fa-facebook" style="color: #1f5eab"></i
+        ></a>
+      </li>
+      <li style="--i: 5">
+        <a href=""
+          ><i class="fa-brands fa-telegram" style="color: #00771d"></i
+        ></a>
+      </li>
+      <li style="--i: 6">
+        <a href=""
+          ><i class="fa-brands fa-twitter" style="color: #ffc700"></i
+        ></a>
+      </li>
+    </div>
+
+    <script>
+      let toggle = document.getElementById("links-toggle");
+      let menu = document.getElementById("links-menu");
+      toggle.onclick = function () {
+        console.log("Clicked");
+        menu.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

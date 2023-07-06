@@ -1,0 +1,79 @@
+.links-menu {
+    position: fixed;
+    bottom: 10%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    left: -2%;
+}
+
+.links-menu li {
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transform-origin: 100px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(80px);
+}
+
+.links-menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    transform: rotate(calc(360deg / -8 * var(--i)));
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.links-menu li a:hover {
+    color: rgb(57, 57, 57);
+}
+
+.links-menu li a i {
+    font-size: 1.7vw;
+}
+
+.links-menu.active li{
+    transform: rotate(calc(360deg / 8 * var(--i)));
+    
+}
+
+.links-toggle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.15);
+    font-size: 2em;
+    transition: transform 1.25s;
+}
+
+.links-menu.active .links-toggle {
+    transform: rotate(315deg);
+}
+
+@media only screen and (max-width: 700px) {
+    .links-menu{ 
+        bottom: 5%;
+        left: -10%;
+    }
+    
+    .links-menu li a i {
+        font-size: 8vw;
+    }
+}

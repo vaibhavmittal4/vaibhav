@@ -1,0 +1,115 @@
+
+.accessibility-menu{
+    position: fixed;
+    right: -180px;
+    /* background: purple; */
+    top: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    /* height: 100px; */
+    z-index: 100;
+    transition: .3s;
+
+}
+
+.active-menu{
+    right: 0 !important;
+}
+
+.highlight-links{
+    text-decoration: underline !important;
+}
+
+.accessibility-menu .show-menu-toggle {
+    width: 40%;
+    height: 65px;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px -10px black;
+    background: white;
+    cursor: pointer;
+}
+
+.accessibility-menu .show-menu-toggle i{
+    font-size: 1.3vw !important;
+    color: #1F5EAB;
+}
+
+.accessibility-menu .show-menu-toggle p {
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #1F5EAB;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.accessibility-menu .menu {
+    width: 60%;
+    box-shadow: 5px 5px 20px -10px rgb(69, 69, 69);
+    background: white;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.accessibility-menu .menu > p {
+    font-size: .7vw !important;
+    padding-top: 10px;
+    color: #1F5EAB;
+}
+
+.accessibility-menu .menu ul{
+    width: 100%;
+}
+
+.accessibility-menu .menu ul li {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    color: rgb(69, 69, 69);
+    margin-bottom: 10px;
+}
+
+.accessibility-menu .menu ul li p {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.accessibility-menu .menu ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    width: 40%;
+    height: 2px;
+    background-color: rgb(69, 69, 69);
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 700px) {
+    .accessibility-menu {
+        right: -100px;
+    }
+    .active-menu {
+        right:  90px !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .accessibility-menu .show-menu-toggle i{
+        font-size: 6vw !important;
+    }
+    .accessibility-menu .menu > p {
+        font-size: 4vw !important;
+    }
+    
+}
