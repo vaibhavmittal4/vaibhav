@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      $(function () {
+        $("#navbar").load("nav.html");
+      });
+      $(function () {
+        $("#main_footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div class="heading-section grayscale">
+      <div class="main-heading-section">
+        <div class="main-heading-section2">
+          <h1 class="adjustable_text">Contact Us</h1>
+          <p class="adjustable_text">
+            Call us today to discuss your care needs
+          </p>
+        </div>
+        <!-- <img src="./includes/media/contact-us-bg.png" alt=""> -->
+      </div>
+    </div>
+    <div class="main-form grayscale">
+      <div class="left">
+        <div class="contact-info">
+          <i class="fa-solid fa-phone adjustable_text"></i>
+          <div class="contact-info-text">
+            <p class="contact-info-text-heading adjustable_text">
+              We're here for you. We value your individual needs. We have the
+              expertise to help.
+            </p>
+            <p class="contact-info-text-main adjustable_text">+91 999999999</p>
+          </div>
+        </div>
+        <div class="email-info">
+          <i class="fa-solid fa-envelope adjustable_text"></i>
+          <div class="email-info-text">
+            <p class="email-info-text-heading adjustable_text">
+              For any media looking for statements or responses, please
+              contactthe media team.
+            </p>
+            <p class="email-info-text-main adjustable_text">info@cancer.com</p>
+          </div>
+        </div>
+        
+      </div>
+      <hr class="breaker" />
+      <div class="right">
+        <form action="mail.php" method="POST">
+          <div class="input-boxes">
+            <div class="small-inputs">
+              <input
+                class="adjustable_text"
+                type="text"
+                placeholder="first name"
+                name="firstName"
+                required
+              />
+              <input
+                class="adjustable_text"
+                type="text"
+                placeholder="last name"
+                name="lastName"
+                required
+              />
+            </div>
+            <div class="large-input">
+              <input
+                class="adjustable_text"
+                type="email"
+                placeholder="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="large-input">
+              <input
+                class="adjustable_text"
+                type="number"
+                placeholder="phone"
+                name="phone"
+                required
+              />
+            </div>
+            <div class="large-input">
+              <textarea
+                class="adjustable_text"
+                type="text"
+                placeholder="Message"
+                name="message"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="check-boxes">
+            <div class="enquiry-about">
+              <p class="checkbox-heading adjustable_text">
+                My Enquiry is about
+              </p>
+              <div class="enquiry-checkbox">
+                <div class="first-column">
+                  <label class="checkbox-text adjustable_text">
+                    <input type="checkbox" name="css" />
+                    Community and Social Service
+                  </label>
+                </div>
+                <div class="second-column">
+                  <label class="checkbox-text adjustable_text">
+                    <input type="checkbox" name="sles" />
+                    School Leaver Employment Supports (SLES)
+                  </label>
+                </div>
+              </div>
+              <div class="enquiry-checkbox">
+                <div class="first-column">
+                  <label class="checkbox-text adjustable_text">
+                    <input type="checkbox" name="acc" />
+                    Short and medium term accomodation (Respite)
+                  </label>
+                </div>
+                <div class="second-column">
+                  <label class="checkbox-text adjustable_text">
+                    <input type="checkbox" name="support" />
+                    Support Coordination
+                  </label>
+                </div>
+              </div>
+              <div class="enquiry-checkbox">
+                <div class="first-column">
+                  <label class="checkbox-text adjustable_text">
+                    <input type="checkbox" name="sda" />
+                    Specialist Disability Accommodation (SDA)
+                  </label>
+                </div>
+                <div class="second-column">
+                  <label class="checkbox-text adjustable_text">
+                    <input type="checkbox" name="employ" />
+                    Supported Employment
+                  </label>
+                </div>
+              </div>
+              <div class="enquiry-checkbox">
+                <div class="first-column">
+                  <label class="checkbox-text adjustable_text">
+                    <input type="checkbox" name="sil" />
+                    Supported Independent Living (SIL)
+                  </label>
+                </div>
+                <div class="second-column">
+                  <label class="checkbox-text adjustable_text">
+                    <input type="checkbox" name="other" />
+                    Other
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="description">
+              <p class="checkbox-heading adjustable_text">
+                What best describes you
+              </p>
+              <div class="description-checkbox">
+                <div class="first-column">
+                  <label class="checkbox-text adjustable_text">
+                    <input type="checkbox" name="guard" />
+                    I am a family member or guardian of someone with a
+                    disability
+                  </label>
+                </div>
+                <div class="second-column">
+                  <label class="checkbox-text adjustable_text">
+                    <input type="checkbox" name="coord" />
+                    I am a support coordinator
+                  </label>
+                </div>
+              </div>
+              <div class="description-checkbox">
+                <div class="first-column">
+                  <label class="checkbox-text adjustable_text">
+                    <input type="checkbox" name="worker" />
+                    I am a support worker
+                  </label>
+                </div>
+                <div class="second-column">
+                  <label class="checkbox-text adjustable_text">
+                    <input type="checkbox" name="teacher" />
+                    I am a teacher or case worker
+                  </label>
+                </div>
+              </div>
+              <div class="description-checkbox">
+                <div class="first-column">
+                  <label class="checkbox-text adjustable_text">
+                    <input type="checkbox" name="disable" />
+                    I am a person with a disability
+                  </label>
+                </div>
+                <div class="second-column">
+                  <label class="checkbox-text adjustable_text">
+                    <input type="checkbox" name="other2" />
+                    Other
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="submit-btn adjustable_text"
+            name="submitForm"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.9043071581787!2d144.99175225023976!3d-37.83912604316742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6429cd409489b%3A0x2f2a40d87d55975!2sLevel%203%2F199%20Toorak%20Rd%2C%20South%20Yarra%20VIC%203141%2C%20Australia!5e0!3m2!1sen!2sin!4v1666727630198!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div id="main_footer"></div>
+  </body>
+</html>

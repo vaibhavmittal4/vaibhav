@@ -1,0 +1,438 @@
+.heading-section {
+    width: 100%;
+    height: 50vh;
+    /* background: red; */
+    background-image: url("/images/whydops_cleanup-transformed.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* height: max-content; */
+}
+
+.main-heading-section {
+    width: 100%;
+    height: 100%;
+    background: #1f5eabc6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading-section2 {
+    width: 50%;
+    height: 50%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-heading-section2 h1 {
+    font-size: 3.5vw;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-heading-section2 p {
+    font-size: 1vw;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: red; */
+    margin-top: 5%;
+}
+
+.left {
+    width: 35%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    width: 55%;
+    height: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    /* background: green; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.breaker {
+    width: 3px;
+    height: 50%;
+    background-color: #d0d0d0;
+    border: none;
+    border-radius: 10px;
+    /* background: red; */
+}
+
+.left .contact-info,
+.email-info,
+.location-info {
+    /* background: yellow; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 7%;
+}
+
+.left .contact-info i,
+.email-info i,
+.location-info i {
+    font-size: 1.3vw;
+    color: #FABC60;
+    margin-right: 4%;
+}
+
+.left .contact-info .contact-info-text,
+.email-info .email-info-text,
+.location-info .location-info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.left .contact-info .contact-info-text .contact-info-text-heading,
+.email-info .email-info-text .email-info-text-heading,
+.location-info .location-info-text .location-info-text-heading {
+    font-size: .9vw;
+}
+
+.left .contact-info .contact-info-text .contact-info-text-main,
+.email-info .email-info-text .email-info-text-main,
+.location-info .location-info-text .location-info-text-main {
+    font-size: .8vw;
+    color: #FABC60;
+    font-weight: 500;
+}
+
+.right form {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: orange; */
+    flex-direction: column;
+}
+
+.right .input-boxes {
+    height: 100%;
+    width: 100%;
+    /* background: lightblue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.small-inputs,
+.large-input {
+    width: 90%;
+    /* background: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 1%;
+}
+
+.small-inputs input,
+.large-input input,
+.large-input textarea {
+    border: 2px solid #595959;
+    color: #595959;
+    padding-left: 3%;
+    background: none;
+    border-radius: 2px;
+    font-size: 1vw;
+    outline: none;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+input:focus, textarea:focus{
+    border: 3px solid #FABC60;
+}
+
+.large-input textarea {
+    height: 150%;
+}
+
+.small-inputs {
+    justify-content: space-between;
+}
+
+.small-inputs input {
+    width: 45%;
+    height: 100%;
+}
+
+.large-input input {
+    width: 100%;
+    height: 100%;
+}
+
+.large-input textarea {
+    width: 100%;
+    height: 100%;
+}
+
+.large-input textarea {
+    padding-top: 2%;
+}
+
+.check-boxes {
+    width: 90%;
+    height: 70%;
+    /* background: cyan; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    accent-color: #FABC60;
+}
+
+.check-boxes .enquiry-about,
+.description {
+    height: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.check-boxes .enquiry-about .enquiry-checkbox,
+.description .description-checkbox {
+    /* background: green; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form .submit-btn {
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background: #FABC60;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 1.3vw;
+}
+
+.checkbox-heading {
+    font-weight: bold;
+    font-size: 1.3vw;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-decoration: underline;
+    color: #1F5EAB;
+}
+
+.map {
+    margin: 0 auto;
+    width: 80%;
+    height: 40vh;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.first-column {
+    width: 48%;
+    /* background: green; */
+    margin-bottom: 1.5%;
+}
+
+.second-column {
+    margin-top: 0 !important;
+    /* background-color: red; */
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 1080px) {
+    .heading-section {
+        height: 20vh;
+        background-position: center;
+    }
+    .main-heading-section {
+        background: #1f5eab85;
+    }
+    .main-heading-section2 h1 {
+        font-size: 6vw;
+    }
+    .main-heading-section2 p {
+        font-size: 1.5vw;
+    }
+    .main-form .left .contact-info,
+    .email-info,
+    .location-info {
+        width: 100%;
+    }
+    .main-form .left .contact-info i,
+    .email-info i,
+    .location-info i {
+        font-size: 2.1vw;
+    }
+    .main-form .left .contact-info .contact-info-text .contact-info-text-heading,
+    .main-form .left .email-info .email-info-text .email-info-text-heading,
+    .main-form .left .location-info .location-info-text .location-info-text-heading {
+        font-size: 1.3vw
+    }
+    .main-form .left .contact-info .contact-info-text .contact-info-text-main,
+    .main-form .left .email-info .email-info-text .email-info-text-main,
+    .main-form .left .location-info .location-info-text .location-info-text-main {
+        font-size: 1.4vw;
+    }
+    .breaker {
+        height: 50%;
+    }
+    .right form .input-boxes {
+        width: 100%;
+        height: 50%;
+    }
+    .right form .input-boxes input,
+    .input-boxes textarea {
+        font-size: 1.6vw;
+    }
+    .check-boxes {
+        width: 100%;
+        height: 50%;
+    }
+    .right form button {
+        height: 5%;
+    }
+    .map {
+        height: 25vh;
+    }
+    .first-column {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+
+
+    .right form {
+        height: 100%;
+    }
+    .heading-section {
+        height: 20vh;
+    }
+    .heading-section .main-heading-section h1 {
+        font-size: 6vw;
+    }
+    .heading-section .main-heading-section p {
+        font-size: 2.5vw;
+    }
+    .main-form {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .main-form .left,
+    .main-form .right {
+        width: 95%;
+    }
+    .main-form .left .contact-info,
+    .left .email-info,
+    .left .location-info {
+        width: 90%;
+    }
+    .main-form .left .contact-info i,
+    .email-info i,
+    .location-info i {
+        font-size: 3vw;
+    }
+    .left .contact-info .contact-info-text .contact-info-text-heading,
+    .left .email-info .email-info-text .email-info-text-heading,
+    .left .location-info .location-info-text .location-info-text-heading {
+        font-size: 3vw !important;
+        padding-left: 2%;
+    }
+    .left .contact-info .contact-info-text .contact-info-text-main,
+    .left .email-info .email-info-text .email-info-text-main,
+    .left .location-info .location-info-text .location-info-text-main {
+        font-size: 3vw !important;
+        padding-left: 2%;
+    }
+    .breaker {
+        width: 50%;
+        height: 5px;
+    }
+    .right {
+        margin-top: 10%;
+    }
+    .right .input-boxes {
+        width: 100%;
+        height: 18vh !important;
+    }
+    .right .input-boxes input,
+    .input-boxes textarea {
+        font-size: 3vw !important;
+    }
+    .right .input-boxes .large-input,
+    .right .input-boxes .small-inputs {
+        height: 90%;
+        margin-bottom: 3px;
+    }
+    .right .check-boxes {
+        width: 100%;
+    }
+    .right .check-boxes .enquiry-about p{
+        font-size: 4vw;
+    }
+    .right .check-boxes .enquiry-about .enquiry-checkbox {
+        flex-direction: column;
+    }
+    .right .check-boxes .enquiry-about .enquiry-checkbox .first-column, .right .check-boxes .enquiry-about .enquiry-checkbox .second-column {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+    .right .check-boxes .description p{
+        font-size: 4vw;
+    }
+    .right .check-boxes .description .description-checkbox {
+        flex-direction: column;
+    }
+    .right .check-boxes .description .description-checkbox .first-column, .right .check-boxes .description .description-checkbox .second-column {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+    .right .check-boxes .enquiry-about .enquiry-checkbox .checkbox-text {
+        font-size: 3.3vw;
+    }
+    .right .check-boxes .description .description-checkbox .checkbox-text {
+        font-size: 3.3vw;
+    }
+    .right form button {
+        width: 40%;
+        margin-bottom: 5%;
+        font-size: 3vw;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+}

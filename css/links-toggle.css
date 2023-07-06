@@ -1,6 +1,6 @@
 .links-menu {
     position: fixed;
-    bottom: 10%;
+    bottom: 0%;
     width: 200px;
     height: 200px;
     display: none;
@@ -73,11 +73,29 @@
 
 @media only screen and (max-width: 700px) {
     .links-menu{ 
-        bottom: 5%;
+        top: 72%;
         left: -10%;
     }
     
     .links-menu li a i {
         font-size: 8vw;
     }
+}
+@media only screen and (min-width:701px) and (max-width: 986px) {
+    .links-menu{ 
+        top: 72vh;
+        left: -5%;
+    }
+    
+    .links-menu li a i {
+        font-size: 8vw;
+    }
+}
+@media only screen and (min-width:987pc) and (max-width: 1035px) {
+    .links-menu{ 
+        top: 100%;
+        left: -5%;
+    }
+    
+    
 }

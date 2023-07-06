@@ -6,14 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/typesofcancer.css">
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
-      <script src="https://kit.fontawesome.com/a862feff0b.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <script>
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"></script>
+
+<script src="./js/index.js" defer></script>
+<script>
     $(function () {
       $("#navbar").load("nav.html");
     });
@@ -23,12 +22,13 @@
     
 
 </script>
+</head>
+<body>
+  <div id="chat"></div>
 
-<div id="chat"></div>
-  <div id="navbar"></div>
-  <div id="types">
+    <div id="navbar"></div>
     <div class="upper-typesofcancer">
-        <span class="typesofcancer-heading">Types of Childhood Cancer:</span>
+        <span class="typesofcancer-heading">Childhood Cancer Types:</span>
         <span class="typesofcancer-captions">We aim to provide you with a deeper understanding of the various types of cancer that can affect children.  By equipping parents, caregivers, and healthcare professionals with valuable knowledge about these cancer types, we hope to empower them in their journey of supporting and caring for children with cancer.
         </span>
     </div>
@@ -100,6 +100,6 @@
               </div>
           
           
-    </div></div>
+    </div>
 </body>
 </html>

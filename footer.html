@@ -1,75 +1,104 @@
+<?php
+
+if(isset($_POST['save'])) {
+    include "./conn_conn.php";
+    $email = $_POST['email'];
+    $query = "SELECT * FROM subscription where email = '$email';";
+    $result = mysqli_query($conn, $query);
+    if(mysqli_num_rows($result) == 0) {
+        $query2 = "INSERT INTO subscription (email) VALUES ('$email');";
+        mysqli_query($conn, $query2);
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/footer.css">
-    <script src="https://kit.fontawesome.com/a862feff0b.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div id="footer">
-        <div id="contents">
-            <div id="c1" class="c">
-                <div class="logo"><a href="index.html">
-        
-                    <!-- <img src="./includes/media/logo.png" alt="logo" class="logo-img high-contrast"/> -->
-                    <img src=".//images/logo.png" alt="" class="logo-text-img"></a>
-                    <h4 class="logo-text-text-2">LITTLE WARRIORS</h4>
-                  </div>
-                <p id="about_lines">At Our Children's Cancer Support, we are dedicated to providing care, and support to children affected by cancer. </p>
+    <link rel="stylesheet" href="./includes/css/style.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <footer class="high-contrast grayscale">
+      <div class="main-footer">
+        <div class="first-row">
+          <div class="short-about">
+            <div class="logo">
+              <img src="/images/logo.png" />
             </div>
-
-            <div id="c2" class="c">
-                <p class="heading">Contact Info</p>
-                <p class="con" id="ccc2">+91 999999999</p>
-                <p class="con">abcd@gmail.com</p>
-                <p class="con">www.abcd.com</p>
+            <h2 class="footer-address adjustable_text">
+              ADDRESS: Level 3/199 Toorak Rd, South Yarra VIC 3141, Australia
+            </h2>
+            <button
+              class="contact-button"
+              onclick="window.href = './contact.html'"
+            >
+              Contact Now
+            </button>
+            <div class="social-media-links">
+              <i class="fa-brands fa-twitter adjustable_text"></i>
+              <i class="fa-brands fa-facebook-f adjustable_text"></i>
+              <i class="fa-brands fa-instagram adjustable_text"></i>
+              <i class="fa-brands fa-linkedin-in adjustable_text"></i>
             </div>
+          </div>
 
-            <div id="c3" class="c">
-                <p class="heading">Information</p>
-                <div id="con2_main">
-                    <a href="" class="con2">Link1</a>
-                    <a href="" class="con2">Link2</a>
-                    <a href="" class="con2">Link3</a>
-                    <a href="" class="con2">Link4</a>
-                    <a href="" class="con2">Link5</a>
-                    <a href="" class="con2">Link6</a>
-                    <a href="" class="con2">Link7</a>
-                    <a href="" class="con2">Link8</a>
-                    <a href="" class="con2">Link9</a>
-                    <a href="" class="con2">Link10</a>
-                </div>
-
+          <div class="footer-links">
+            <div class="important-links">
+              <p class="adjustable_text">Important Links</p>
+              <div class="underline"></div>
             </div>
-
-
-            <div id="c4" class="c">
-                <p class="heading">Opening Hours</p>
-                <div id="table1">
-                    <div id="days">
-                        <p class="con3">Monday</p>
-                        <p class="con3">Tuesday</p>
-                        <p class="con3">Wednesday</p>
-                        <p class="con3">Thursday</p>
-                        <p class="con3">Friday</p>
-                    </div>
-
-                    <div id="time">
-                        <p class="con4">8:00am - 9:00pm</p>
-                        <p class="con4" id="ccc3">8:00am - 9:00pm</p>
-                        <p class="con4">8:00am - 9:00pm</p>
-                        <p class="con4">8:00am - 9:00pm</p>
-                        <p class="con4">8:00am - 9:00pm</p>
-                    </div>
-                </div>
+            <div class="uls">
+              <ul>
+                <li><a href="/" class="adjustable_text">Home</a></li>
+                <li>
+                  <a href="./about.html" class="adjustable_text">About Us</a>
+                </li>
+                <li>
+                  <a href="./howis.html" class="adjustable_text">Services</a>
+                </li>
+                <li>
+                  <a href="./whatis.html" class="adjustable_text"
+                    >More About Cancer</a
+                  >
+                </li>
+              </ul>
+              <ul>
+                <li><a href="" class="adjustable_text">Join us</a></li>
+                <li><a href="" class="adjustable_text">Contact Us</a></li>
+                <li><a href="" class="adjustable_text">Blogs</a></li>
+                <li><a href="" class="adjustable_text">Student</a></li>
+              </ul>
             </div>
+          </div>
         </div>
-    </div>
-
-
-
-  
-</body>
+        <div class="second-row">
+          <img src="/images/logo.png" />
+          <p class="adjustable_text">
+            The Benevolent Society acknowledges the Traditional Owners of
+            Country throughout Australia and recognises Aboriginal & Torres
+            Strait Islander continuing connection to land, waters and community.
+            We pay our respects to Elders both past and present. To read more
+            about our commitment to Aboriginal & Torres Strait Islander people,
+            view our reconciliation action plan here.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <ul>
+          <li><a href="" class="adjustable_text">Privacy</a></li>
+          <li><a href="" class="adjustable_text">Sitemap</a></li>
+          <li><a href="" class="adjustable_text">Terms and Conditions</a></li>
+        </ul>
+        <h2 class="copy-disclaimer adjustable_text">
+          &COPY; Copyright 2022 CancerFree
+        </h2>
+      </div>
+    </footer>
+  </body>
 </html>

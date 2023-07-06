@@ -1,116 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/navbar.css">
-    <script src="https://kit.fontawesome.com/a862feff0b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/links-toggle.css">
-    <script src="js/index.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" href="css/links-toggle.css">
+<link rel="stylesheet" href="css/header.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Irish+Grover&family=Reem+Kufi+Ink&family=Righteous&display=swap" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700;1,800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a862feff0b.js" crossorigin="anonymous"></script>
+    <style>
+        df-messenger {
+         --df-messenger-bot-message: #878fac;
+         --df-messenger-button-titlebar-color: #1F5EAB;
+         --df-messenger-button-color: #ffffff;
+         --df-messenger-chat-background-color: #fafafa;
+         --df-messenger-font-color: white;
+         --df-messenger-send-icon: #878fac;
+         --df-messenger-user-message: #479b3d;
+        }
+        #chatbot{
+            height: 200px;
+            border: 1px solid black;
+        }
+      </style>
+  <!-- <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script> -->
 </head>
 <body>
-    <div class="header grayscale">
-        <div class="icons">
-          
-          <i class="fa-brands fa-facebook-square icon adjustable_text high-contrast" style="color: #1F5EAB"></i>
-          <i class="fa-brands fa-instagram icon adjustable_text high-contrast" style="color: #00771D"></i>
-          <i class="fa-brands fa-twitter icon adjustable_text high-contrast" style="color: #FFC700"></i>
-        </div>
-        <div class="infos">
-          <div class="email info">
-            <i style="color: #992F8F;" class="fa-solid fa-envelope adjustable_text"></i>
-            <p style="color: #992F8F;" class="adjustable_text">info.cancer@gmail.com</p>
-          </div>
-          <div class="phone info">
-            <i style="color: #EC5101;" class="fa-solid fa-phone adjustable_text"></i>
-            <p style="color: #EC5101;" class="adjustable_text">+91 999999999</p>
-          </div>
-        </div>
-
-
-          </div>
-     
   
+ <div class="header grayscale">
+    <div class="icons">
       
-    <div class="wrapper grayscale">
-      <nav>
-        <input type="checkbox" id="show-search">
-        <input type="checkbox" id="show-menu">
-        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
-        <div class="content">
-        <div class="logo"><a href="index.html">
-        
-          <!-- <img src="./includes/media/logo.png" alt="logo" class="logo-img high-contrast"/> -->
-          <img src=".//images/logo.png" alt="" class="logo-text-img">
-          <h4 class="logo-text-text-2">LITTLE WARRIORS</h4>
-        </a></div>
-          <ul class="links">
-            <li><a href="./index.html" class="adjustable_text">Home</a></li>
-            <li><a href="./about.html" class="adjustable_text">About</a></li>
-            
-            <li>
-              <a href="#" class="desktop-link adjustable_text">Support & Resources</a>
-              <input type="checkbox" id="show-features">
-              <label for="show-features">Support & Resources</label>
-              <ul>
-                <li><a href="whatis.html" class="adjustable_text">What is Childhood Cancer?</a></li>
-                <li><a href="howis.html" class="adjustable_text">How is Childhood Cancer Treated?</a></li>
-                <li><a href="typesofcancer.html" class="adjustable_text">Types of Childhood Cancer</a></li>
-                <li><a href="whydo.html" class="adjustable_text">Why do Children get cancer?</a></li>
-                <li><a href="finding.html" class="adjustable_text">Finding Cancer In Children</a></li>
-                <li><a href="aft-treatment.html" class="adjustable_text">After Treatement Of Childhood Cancer</a></li>
-                <!-- <li><a href="groupActivties.php" class="adjustable_text">Why do Children gets Cancer?</a></li>
-                <li><a href="lifestyleAndCareer.php" class="adjustable_text">Life Style and Career Development</a></li>
-                <li><a href="inHomeServices.php" class="adjustable_text">In Home Services</a></li> -->
-              </ul>
-            </li>
-            <!-- <li>
-              <a href="#" class="desktop-link" class="adjustable_text">Careers</a>
-              <input type="checkbox" id="show-features">
-              <label for="show-features" class="adjustable_text">Careers</label>
-              <ul>
-                <li><a href="workWithUsMain.php" class="adjustable_text">Work With Us</a></li>
-                <li><a href="volunteer.php" class="adjustable_text">Volunteer</a></li>
-              </ul>
-            </li>
-            <li><a href="blogs.php" class="adjustable_text">Blogs</a></li> -->
-            <li><a href="contact.php" class="adjustable_text">Contact</a></li>
-          </ul>
-        </div>
-        <!-- <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-        <form action="#" class="search-box">
-          <input type="text" placeholder="Type Something to Search..." required>
-          <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
-        </form> -->
-      </nav>
+      <i class="fa-brands fa-facebook-square icon adjustable_text high-contrast" style="color: #1F5EAB"></i>
+      <i class="fa-brands fa-instagram icon adjustable_text high-contrast" style="color: #00771D"></i>
+      <i class="fa-brands fa-twitter icon adjustable_text high-contrast" style="color: #FFC700"></i>
     </div>
-     <div class="links-menu">
-          <div class="links-toggle"><i class="fa-solid fa-link"></i></div>
-          <li style="--i:2;">
-              <a href=""><i class="fa-brands fa-instagram" style="color: #FF4343; font-size: 35px;"></i></a>
-          </li>
-          <li style="--i:3;">
-              <a href=""><i class="fa-brands fa-facebook" style="color: #1F5EAB; font-size: 35px;"></i></a>
-          </li>
-          
-          <li style="--i:4;">
-              <a href=""><i class="fa-brands fa-twitter" style="color: #FFC700 ; font-size: 35px;"></i></a>
-          </li>
+    <div class="infos">
+      <div class="email info">
+        <i style="color: #992F8F;margin-right:10px;" class="fa-solid fa-envelope adjustable_text" ></i>
+        <p style="color: #992F8F;" class="adjustable_text">info.cancer@gmail.com</p>
       </div>
-    <script>
-          let toggle = document.querySelector(".links-toggle");
-          let menu = document.querySelector(".links-menu");
-          toggle.onclick = function() {
-              menu.classList.toggle("active");
-          }
-      </script> 
+      <div class="phone info">
+        <i style="color: #EC5101;" class="fa-solid fa-phone adjustable_text"></i>
+        <p style="color: #EC5101;" class="adjustable_text">+91 999999999</p>
+      </div>
+    </div>
+
+
+      </div> 
+ 
+    <div class="navigation-wrap bg-light start-header start-style">
+      
+      <div class="container">
+        
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md navbar-light">
+            
+              <a class="navbar-brand" ><img  src="images/LITTLE_WARRIORS_(1)-transformed.png" alt=""></a>  
+              
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Support & Resources</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="whatis.html">What is childhood cancer?</a>
+                      <a class="dropdown-item" href="howis.html">How childhood cancer is treated?</a>
+                      <a class="dropdown-item" href="typesofcancer.html">Types of childhood cancer</a>
+                      <a class="dropdown-item" href="whydo.html">Why do children get cancer?</a>
+                      <a class="dropdown-item" href="finding.html">Finding cancer in children</a>
+                      <a class="dropdown-item" href="aft-treatment.html">After treatment of childhood cancer</a>
+                    </div>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+            </nav>    
+          </div>
+        </div>
+      
+    </div>
+    <div class="links-menu">
+      <div class="links-toggle"><i class="fa-solid fa-link"></i></div>
+      <li style="--i:2;">
+          <a href=""><i class="fa-brands fa-instagram" style="color: #FF4343; font-size: 35px;"></i></a>
+      </li>
+      <li style="--i:3;">
+          <a href=""><i class="fa-brands fa-facebook" style="color: #1F5EAB; font-size: 35px;"></i></a>
+      </li>
+      
+      <li style="--i:4;">
+          <a href=""><i class="fa-brands fa-twitter" style="color: #FFC700 ; font-size: 35px;"></i></a>
+      </li>
+  </div>
+  
+
+    
+ 
+  
+  
+  
+  
+  
+  <script>
+      let toggle = document.querySelector(".links-toggle");
+      let menu = document.querySelector(".links-menu");
+      toggle.onclick = function() {
+          menu.classList.toggle("active");
+      }
+  </script> 
+  
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+  
+  <script>
+
+
+
+
+
+
+  </script>
 </body>
-</html>
+</html> 

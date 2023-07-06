@@ -11,6 +11,7 @@
     background-size: cover;
     background-position: center;
     padding-bottom: 70px;
+    text-align: left !important;
 }
 #head{
     
@@ -26,6 +27,7 @@
     top: 80px;
     left: 90px;
     width: 70%;
+    text-align: left !important;
 }
 #org2{
 color: white;
@@ -36,6 +38,7 @@ font-size: 70px;
     left: 90px;
     width: 50%;
     /* border: 1px solid black; */
+    text-align: left !important;
 }
 #con_grid{
     display: grid;
@@ -61,6 +64,7 @@ font-size: 70px;
     color: #B88556;
     font-family: 'Irish Grover' , sans-serif;
     font-size: 33px;
+    text-align: left !important;
 }
 #con_p1 p{
     font-family: 'Inter', sans-serif;
@@ -69,6 +73,7 @@ font-size: 70px;
     /* border: 1px solid black; */
     font-weight: 500;
     padding-right: 8px;
+    text-align: left !important;
 }
 
 
@@ -84,6 +89,7 @@ font-size: 70px;
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: left !important;
 }
 
 

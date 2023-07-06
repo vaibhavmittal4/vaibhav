@@ -41,39 +41,51 @@
 
             <div id="info">
                 <div id="content">
-                    <div class="c">
-                        <h3 id="heading">
-                            Emotional Support :
-                        </h3>
-                        <p id="con">
-                            We believe in the power of emotional well-being during the cancer journey. Our dedicated counselors are here to provide a nurturing and safe environment, offering guidance, comfort, and encouragement to both children and their families. We organize support groups, therapeutic activities, and individual counseling sessions to ensure that no one ever feels alone in their struggle.
-                        </p>
+                    
+
+                    <div class="c fade-in-text">
+                        
+                            <div class="author_bio_toggle_wrapper2">
+                                <a href="#0" id="author_bio_wrap_toggle2">Education & Resources:</a>
+                              </div> 
+                              <div id="author_bio_wrap2" style="display: none;"> Knowledge is power, especially when facing a battle like cancer. We provide educational resources to help families better understand the disease, treatment options, and possible side effects. Our goal is to empower families with information, enabling them to make informed decisions and actively participate in their child's care.
+                    
+                              </div>
+                    
+                        </div>
+
+                    <div class="c fade-in-element">
+                        <div class="author_bio_toggle_wrapper">
+                            <a href="#0" id="author_bio_wrap_toggle">Emotional Support:</a>
+                          </div> 
+                          <div id="author_bio_wrap" style="display: none;"> We believe in the power of emotional well-being during the cancer journey. Our dedicated counselors are here to provide a nurturing and safe environment, offering guidance, comfort, and encouragement to both children and their families. We organize support groups, therapeutic activities, and individual counseling sessions to ensure that no one ever feels alone in their struggle.
+                                                  
+                          </div>
                     </div>
+ 
 
-                    <div class="c">
-                        <h3 id="heading">
-                            Education & Resources:                        </h3>
-                        <p id="con">
-                            Knowledge is power, especially when facing a battle like cancer. We provide educational resources to help families better understand the disease, treatment options, and possible side effects. Our goal is to empower families with information, enabling them to make informed decisions and actively participate in their child's care.</p>
-                    </div>
-
-
-
-                    <div class="c">
-                        <h3 id="heading">
-                            Medical Care :                        </h3>
-                        <p id="con">
-                            Our skilled medical team works closely with renowned pediatric oncologists to ensure that the children receive the best possible medical care. From diagnosis to treatment and beyond, we are committed to providing comprehensive healthcare services tailored to the specific needs of each child.</p>
-                    </div>
+                    <div class="c fade-in-text">
+                       
+                            <div class="author_bio_toggle_wrapper3">
+                                <a href="#0" id="author_bio_wrap_toggle3">Medical Care: </a>
+                              </div> 
+                              <div id="author_bio_wrap3" style="display: none;"> Our skilled medical team works closely with renowned pediatric oncologists to ensure that the children receive the best possible medical care. From diagnosis to treatment and beyond, we are committed to providing comprehensive healthcare services tailored to the specific needs of each child.
+                    
+                              </div>
+                    
+                        </div>
 
 
 
-                    <div class="c">
-                        <h3 id="heading">
-                            Financial Assistance:                        </h3>
-                        <p id="con">
-                            We understand that the financial burden of cancer treatment can be overwhelming. Our organization works diligently to provide financial assistance for medical bills, transportation, and other related expenses. We believe that no family should have to choose between their child's health and their financial stability.                        </p>
-                    </div>
+                    <div class="c fade-in-element">
+                        <div class="author_bio_toggle_wrapper4">
+                        <a href="#0" id="author_bio_wrap_toggle4">Financial Assistance:</a>
+                      </div> 
+                      <div id="author_bio_wrap4" style="display: none;"> We understand that the financial burden of cancer treatment can be overwhelming. Our organization works diligently to provide financial assistance for medical bills, transportation, and other related expenses. We believe that no family should have to choose between their child's health and their financial stability.                       
+                                       
+                      </div>
+                        </div>
+                    
                 </div>
 
 
@@ -85,5 +97,151 @@
             </div>
         </div>
     </div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    jQuery(document).ready(function($)
+{
+  
+  $("#author_bio_wrap_toggle").click(function()
+  {
+    
+    $("#author_bio_wrap").slideToggle( "slow");
+    
+	  if ($("#author_bio_wrap_toggle").text() == "Emotional Support:")
+      {			
+        $("#author_bio_wrap_toggle").html("Emotional Support:")
+        $(".author_bio_toggle_wrapper").css("width" , "auto")
+      }
+	  else 
+      {		
+        $("#author_bio_wrap_toggle").text("Emotional Support:")
+      }
+    
+  });  
+  
+});
+
+
+
+jQuery(document).ready(function($)
+{
+  
+  $("#author_bio_wrap_toggle2").click(function()
+  {
+    
+    $("#author_bio_wrap2").slideToggle( "slow2");
+    
+	  if ($("#author_bio_wrap_toggle2").text() == "Education & Resources:")
+      {			
+        $("#author_bio_wrap_toggle2").html("Education & Resources:")
+        $(".author_bio_toggle_wrapper2").css("width" , "auto")
+      }
+	  else 
+      {		
+        $("#author_bio_wrap_toggle2").text("Education & Resources:")
+      }
+    
+  });  
+  
+});
+
+
+jQuery(document).ready(function($)
+{
+  
+  $("#author_bio_wrap_toggle3").click(function()
+  {
+    
+    $("#author_bio_wrap3").slideToggle( "slow3");
+    
+	  if ($("#author_bio_wrap_toggle3").text() == "Medical Care:")
+      {			
+        $("#author_bio_wrap_toggle3").html("Medical Care:")
+        $(".author_bio_toggle_wrapper3").css("width" , "auto")
+      }
+	  else 
+      {		
+        $("#author_bio_wrap_toggle3").text("Medical Care:")
+      }
+    
+  });  
+  
+});
+
+jQuery(document).ready(function($)
+{
+  
+  $("#author_bio_wrap_toggle4").click(function()
+  {
+    
+    $("#author_bio_wrap4").slideToggle( "slow4");
+    
+	  if ($("#author_bio_wrap_toggle4").text() == "Financial Assistance:")
+      {			
+        $("#author_bio_wrap_toggle4").html("Financial Assistance:")
+        $(".author_bio_toggle_wrapper4").css("width" , "auto")
+      }
+	  else 
+      {		
+        $("#author_bio_wrap_toggle4").text("Financial Assistance:")
+        $(".author_bio_toggle_wrapper4").css("width" , "500px")
+      }
+    
+  });  
+  
+});
+</script>
+    <script>
+        // JavaScript for text animation on scroll
+        const fadeTextElements = document.querySelectorAll('.fade-in-text');
+
+        function fadeInTextOnScroll() {
+            fadeTextElements.forEach((element) => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (elementPosition < windowHeight) {
+                    element.classList.add('fade-in');
+                }
+            });
+        }
+
+        // Trigger animation on initial page load
+        fadeInTextOnScroll();
+
+        // Trigger animation on scroll
+        window.addEventListener('scroll', fadeInTextOnScroll);
+
+
+
+
+        function isElementInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.left >= 0 &&
+    rect.top >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function fadeInOnScroll() {
+  const fadeElements = document.querySelectorAll('.fade-in-element');
+  
+  fadeElements.forEach(element => {
+    if (isElementInViewport(element)) {
+      element.classList.add('fade-in');
+    }
+  });
+}
+
+window.addEventListener('scroll', fadeInOnScroll);
+    </script>
+
+
+
 </body>
 </html>

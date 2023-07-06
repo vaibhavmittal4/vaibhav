@@ -106,7 +106,7 @@
    
     
      <div class="what-is">
-      <div class="what-is-content">
+      <div class="what-is-content fade-in-element">
 
         <div class="what-is-heading">
           <span class="whatis-head-span">What is child cancer?</span>
@@ -136,13 +136,9 @@
             </span>
           </div>
 
-          <div class="what-is-types2">
-            <div class="whatis-dfline"></div>
-            <span class="whatis-explnspan">
-              Types: It encompasses various types of cancer, including leukemia
-              brain tumors, neuroblastoma, Wilms tumor, retinoblastoma,
-              lymphomas, and sarcomas.
-            </span>
+          <div class="what-is-types5 whattttt">
+            <div class="whatis-dfline "></div>
+            
           </div>
         </div>
 
@@ -157,6 +153,21 @@
      
         
       </div>
+      </div>
+    </div>
+
+
+    <div class="video-section">
+      <div class="video-container">
+        <h2>Welcome To LITTLE WARRIORS</h2>
+        <p>Here we help children to fight with this deadly disease</p>
+        <button>Learn More</button>
+      </div>
+      <div class="shadow"></div>
+      <div class="video-video">
+        <video preload autoplay loop muted class="video-main-video">
+          <source data-src="./videos/welcome.mp4" src="./videos/welcome.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
@@ -183,12 +194,12 @@
                       </div>
   
                       <div class="t1">
-                          <p id="t2"><a href="can.html" id="t3">Can Childhood Cancers Be Prevented?</a></p>
+                          <p id="t2"><a href="aft-treatment.html" id="t3">After treatment of childhood cancer</a></p>
                       </div>
                   </div>
   
                   <div class="img">
-                      <h1 id="question">?</h1>
+                      <h1 id="question" class="fade-in-text">?</h1>
                   </div>
               </div></div>
           </div>
@@ -328,7 +339,52 @@
     </div> 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     
+  <script>
+     const fadeTextElements = document.querySelectorAll('.fade-in-text');
+
+function fadeInTextOnScroll() {
+    fadeTextElements.forEach((element) => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementPosition < windowHeight) {
+            element.classList.add('fade-in');
+        }
+    });
+}
+
+// Trigger animation on initial page load
+fadeInTextOnScroll();
+
+// Trigger animation on scroll
+window.addEventListener('scroll', fadeInTextOnScroll);
+
+
+
+
+
+function isElementInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.left >= 0 &&
+    rect.top >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function fadeInOnScroll() {
+  const fadeElements = document.querySelectorAll('.fade-in-element');
   
+  fadeElements.forEach(element => {
+    if (isElementInViewport(element)) {
+      element.classList.add('fade-in');
+    }
+  });
+}
+
+window.addEventListener('scroll', fadeInOnScroll);
+  </script>
   
   
   
