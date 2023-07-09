@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 :root {
     --main-color: #1F5EAB;
     --second-color: #EC5101;
