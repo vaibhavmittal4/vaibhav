@@ -26,7 +26,11 @@
     font-size: 50px;
     color: #2A313B;
 }
-
+#main_footer{
+    position: relative;
+    bottom: 0;
+    top: 0;
+}
 .typesofcancer-captions{
     border: px solid red;
     position: absolute;
@@ -181,7 +185,7 @@
     .typesofcancer-heading{
         border: px solid red;
         position: relative;
-        top: 40px;
+        top: 140px;
         left: 10px;
     
         /* FONTS */
@@ -193,7 +197,7 @@
     .typesofcancer-captions{
         border: px solid red;
         position: absolute;
-        top: 80px;
+        top: 170px;
         left: 10px;
         width: 95%;
     

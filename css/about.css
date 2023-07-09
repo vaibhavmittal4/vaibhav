@@ -69,6 +69,11 @@ body{
 .c{
     margin-top: 50px;
 }
+#main_footer{
+    position: relative;
+    bottom: 0;
+    top: 0;
+}
 .c:first-child{
     margin-top: 0px;
 }
@@ -465,15 +470,16 @@ body{
 
   .author_bio_toggle_wrapper    , .author_bio_toggle_wrapper2 , .author_bio_toggle_wrapper3 , .author_bio_toggle_wrapper4
 {
-        width: 40vw;
+        width: auto;
 }
 
 #author_bio_wrap , #author_bio_wrap2 , #author_bio_wrap3 , #author_bio_wrap4
 {
     margin-top: 0px;  
     margin-bottom: 30px; 
-    background: gray;
-    width: auto; height: 150px;
+    background: #001E42;
+    opacity: 70%;
+    width: auto; height: max-content;
     font-size: 21px;
     font-family: 'Itim';
     padding: 10px 20px;

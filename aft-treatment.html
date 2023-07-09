@@ -19,7 +19,9 @@
         $(function () {
             $("#chat").load("chat.html");
           });
-        
+          $(function () {
+            $("#main_footer").load("footer.html");
+          });
     
   </script>
 </head>
@@ -27,7 +29,7 @@
     <div id="chat"></div>
     <div id="navbar"></div>
     <div class="aft-treatment-bg">
-        <div class="aft-treatment-headdiv">
+        <div class="aft-treatment-headdiv ">
             <span class="aft-treatment-heading1">After</span>
             <span class="aft-treatment-heading1">Treatment of</span>
             <span class="aft-treatment-heading2">Childhood Cancer</span>
@@ -38,19 +40,19 @@
     </div>
 
     <div class="aft-treatment-bottom">
-        <div class="aft-treatment-grid">
-            <div class="aft-treatment-container">
+        <div class="aft-treatment-grid  ">
+            <div class="aft-treatment-container fade-in-text2">
                 <span class="aft-treatment-container-heading">Follow-up care:</span>
                 <span class="aft-treatment-container-content">Regular follow-up visits with the oncology team are essential to monitor the child's health and detect any potential recurrence or late effects of treatment. These visits may involve physical exams, blood tests, imaging scans, and other assessments.</span>
             </div>
 
-            <div class="aft-treatment-container">
+            <div class="aft-treatment-container fade-in-up">
                 <span class="aft-treatment-container-heading">Managing side effects:</span>
                 <span class="aft-treatment-container-content">Cancer treatments can have long-term side effects that may require ongoing management. These can include fatigue, neuropathy, cognitive difficulties, fertility issues, and organ damage. Specialists such as neurologists, endocrinologists, and cardiologists may be involved in addressing specific concerns.</span>
 
             </div>
 
-            <div class="aft-treatment-container">
+            <div class="aft-treatment-container fade-in-text">
                 <span class="aft-treatment-container-heading">Psychological support:</span>
                 <span class="aft-treatment-container-content">Childhood cancer and its treatment can have a significant emotional impact on both the child and their family. Psychosocial support services, such as counseling or support groups, can help address emotional challenges, cope with anxiety or depression, and navigate the transition back to regular life.</span>
 
@@ -58,5 +60,84 @@
             
         </div>
     </div>
+    <div id="main_footer"></div>
+    <script>
+           // JavaScript for text animation on scroll
+           const fadeTextElements = document.querySelectorAll('.fade-in-text');
+
+function fadeInTextOnScroll() {
+    fadeTextElements.forEach((element) => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementPosition < windowHeight) {
+            element.classList.add('fade-in');
+        }
+    });
+}
+
+// Trigger animation on initial page load
+fadeInTextOnScroll();
+
+// Trigger animation on scroll
+window.addEventListener('scroll', fadeInTextOnScroll);
+
+
+
+
+
+
+
+function isElementInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.bottom >= 0 &&
+    rect.right >= 0 &&
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function handleScroll() {
+  var elements = document.querySelectorAll('.fade-in-up');
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    if (isElementInViewport(element)) {
+      element.classList.add('fade-in-visible');
+    }
+  }
+}
+
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('resize', handleScroll);
+window.addEventListener('load', handleScroll);
+
+
+
+
+
+  // JavaScript for text animation on scroll
+  const fadeTextElements2 = document.querySelectorAll('.fade-in-text2');
+
+function fadeInTextOnScroll2() {
+    fadeTextElements2.forEach((element) => {
+        const elementPosition2 = element.getBoundingClientRect().top;
+        const windowHeight2 = window.innerHeight;
+
+        if (elementPosition2 < windowHeight2) {
+            element.classList.add('fade-in2');
+        }
+    });
+}
+
+// Trigger animation on initial page load
+fadeInTextOnScroll2();
+
+// Trigger animation on scroll
+window.addEventListener('scroll', fadeInTextOnScroll2);
+
+
+
+    </script>
 </body>
 </html>

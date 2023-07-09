@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/whydo.css">
     <script
 src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
 integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
 crossorigin="anonymous"
 referrerpolicy="no-referrer"></script>
-
-<script src="./js/index.js" defer></script>
 <script>
-    $(function () {
-      $("#navbar").load("nav.html");
-    });
-    $(function () {
-            $("#chat").load("chat.html");
-          });
-    
+  $(function () {
+    $("#navbar").load("nav.html");
+  });
+  $(function () {
+          $("#chat").load("chat.html");
+        });
+        $(function () {
+          $("#main_footer").load("footer.html");
+        });
 
 </script>
-    <link rel="stylesheet" href="css/whydo.css">
 </head>
 <body>
+  <div id="chat"></div>
 
-    <div id="chat"></div>
     <div id="navbar"></div>
-        <div id="whydoo">
     <div class="whydoupper">
         <div class="whydoupper-paradiv">
             <span class="whydoupper-heading">Why do kids get cancer?</span>
@@ -38,36 +37,90 @@ referrerpolicy="no-referrer"></script>
         
     </div>
     <div class="whydobottom-grid">
-        <div class="whydobottom-container">
-            <span class="whydobottom-container-heading">Genetic predisposition</span>
-            <span class="whydobottom-container-content">Certain genetic conditions or inherited gene mutations can increase a child's risk of developing cancer. Examples include neurofibromatosis, Li-Fraumeni syndrome, retinoblastoma gene mutations, and others.</span>
-        </div>
+        <div class="ag-courses_item">
+            <div href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Genetic predisposition
+                </div>
+      
+              <div class="ag-courses-item_date-box">
+                Certain genetic conditions or inherited gene mutations can increase a child's risk of developing cancer. Examples include neurofibromatosis, Li-Fraumeni syndrome, retinoblastoma gene mutations, and others.
+                
+              </div>
+            </div>
+          </div>
+      
+          <div class="ag-courses_item">
+            <div href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Environmental factors
 
-        <div class="whydobottom-container">
-            <span class="whydobottom-container-heading">Environmental factors</span>
-            <span class="whydobottom-container-content">Exposure to certain environmental factors, such as radiation and certain chemicals, may increase the risk of childhood cancer. However, these factors are relatively rare causes of pediatric cancer compared to genetic factors.
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Exposure to certain environmental factors, such as radiation and certain chemicals, may increase the risk of childhood cancer. However, these factors are relatively rare causes of pediatric cancer compared to genetic factors.
 
-            </span>
-        </div>
+                
+              </div>
+            </div>
+          </div>
 
-        <div class="whydobottom-container">
-            <span class="whydobottom-container-heading">Infections</span>
-            <span class="whydobottom-container-content">Certain viral infections, such as human papillomavirus (HPV), Epstein-Barr virus (EBV), and hepatitis B or C, have been linked to an increased risk of specific childhood cancers.
-            </span>
-        </div>
+          <div class="ag-courses_item">
+            <div href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Infections
 
-        <div class="whydobottom-container">
-            <span class="whydobottom-container-heading">Unknown factors</span>
-            <span class="whydobottom-container-content">In many cases, the exact cause of childhood cancer remains unknown. It is likely that a combination of genetic and environmental factors contributes to the development of cancer in children.</span>
-        </div>
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Certain viral infections, such as human papillomavirus (HPV), Epstein-Barr virus (EBV), and hepatitis B or C, have been linked to an increased risk of specific childhood cancers.
 
-        <div class="whydobottom-container">
-            <span class="whydobottom-container-heading">Things to remember</span>
-            <span class="whydobottom-container-content">It's important to note that most children who develop cancer do not have any known risk factors, and the vast majority of children with risk factors do not develop cancer. Childhood cancer is still considered relatively rare, and the majority of childhood cancers occur sporadically without a clear explanation.Research is ongoing to better understand the causes of childhood cancer and to develop strategies for prevention and early detection.
+                
+              </div>
+            </div>
+          </div>
+      
+      
+          <div class="ag-courses_item">
+            <div href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Unknown factors
+                </div>
+      
+              <div class="ag-courses-item_date-box">
+                In many cases, the exact cause of childhood cancer remains unknown. It is likely that a combination of genetic and environmental factors contributes to the development of cancer in children.
 
-            </span>
-        </div>
+                
+              </div>
+            </div>
+          </div>
+      
+
+          <div class="ag-courses_item lastwala">
+            <div href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Things to remember
+               </div>
+      
+              <div class="ag-courses-item_date-box">
+                It's important to note that most children who develop cancer do not have any known risk factors, and the vast majority of children with risk factors do not develop cancer. Childhood cancer is still considered relatively rare, and the majority of childhood cancers occur sporadically without a clear explanation.
+                
+              </div>
+            </div>
+          </div>
+      
     </div>
-    </div>
+    
+    <div id="main_footer"></div>
 </body>
 </html>

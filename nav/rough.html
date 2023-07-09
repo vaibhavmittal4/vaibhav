@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rough.css">
+    <script src="https://kit.fontawesome.com/a862feff0b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>  
+    <div class="strip">
+        <div class="str-left">
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        <div class="str-right">
+            <span class="str-email"><i class="fa-solid fa-envelope"></i> info@littlewarriors.com.au</span>
+            <span class="str-phno"><i class="fa-solid fa-phone"></i> 98971 696969</span>
+        </div>
+    </div>
+    <nav>
+        <div class="nav-div">
+            
+            <img class="nav-logo" src="images/LITTLE_WARRIORS_(1)-transformed.png">
+            <input type="checkbox" class="check-menu" id="check">
+                <label for="check" class="checkbox">
+                    <div id="nav-icon4">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support & Resources</a>
+
+                        <ul class="drop-down">
+                            <li><a href="#">What is childhood cancer?</a>
+                            <li><a href="#">How childhood cancer is treated?</a>
+                            <li><a href="#">Types of childhood cancer</a>
+                            <li><a href="#">Why do children get cancer?</a>
+                            <li><a href="#">Finding cancer in children</a>
+                            <li><a href="#">After treatment of childhood cancer</a>
+                        </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>   
+        </div>
+    </nav>
+
+    <script>
+        $(document).ready(function(){
+	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+    </script>
+</body>
+</html>

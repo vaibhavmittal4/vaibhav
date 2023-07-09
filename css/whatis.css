@@ -6,13 +6,17 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Irish+Grover&family=Righteous&display=swap'); */
 #whatis{
     background: url(./../images/whatis.jpeg);
-    height:550px;
+    height:auto;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     padding-bottom: 70px;
     text-align: left !important;
+    background-size: 100% 550px;
 }
+/* #whatis_main{
+    height: 1100px;
+} */
 #head{
     
     font-family: 'Righteous';
@@ -24,17 +28,18 @@
     font-size: 70px;
     /* border: 1px solid black; */
     position: relative;
-    top: 80px;
+    top: 130px;
     left: 90px;
     width: 70%;
     text-align: left !important;
+
 }
 #org2{
 color: white;
 font-family: 'Righteous', sans-serif;
 font-size: 70px;
     position: relative;
-    top:80px;
+    top:130px;
     left: 90px;
     width: 50%;
     /* border: 1px solid black; */
@@ -44,11 +49,13 @@ font-size: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /* border: 1px solid black; */
-    margin-top: 250px;
+    position: relative;
+    top: 250px;
     width: 90%;
     position: relative;
     left: 5%;
-    padding-bottom: 50px;
+    padding-bottom:200px;
+    
 }
 
 #con_img img{
@@ -56,8 +63,9 @@ font-size: 70px;
     position: relative;
     left: 25%;
     height: auto;
+    position: relative;
     /* border: 1px solid black; */
-    margin-top: -20px;
+   top: -20px;
 }
 
 #con_p1 h3{
@@ -75,7 +83,10 @@ font-size: 70px;
     padding-right: 8px;
     text-align: left !important;
 }
-
+/* #main_footer{
+    position: relative;
+    top: 500px;
+} */
 
 #con_p2 p{
     font-family: 'Inter', sans-serif;
@@ -103,12 +114,15 @@ font-size: 70px;
     /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Irish+Grover&family=Righteous&display=swap'); */
     #whatis{
         background: url(./../images/whatis.jpeg);
-        height:370px;
+        /* height:370px; */
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
-        margin-top: 90px;
+        background-position: top;
+        margin-top: 0px;
+        border: 1px solid black;
+        background-size: 100% 370px;
     }
+
     #head{
         
         font-family: 'Righteous';
@@ -138,19 +152,19 @@ font-size: 70px;
         display: grid;
         grid-template-columns: 100%;
         /* border: 1px solid black; */
-        margin-top: 100px;
+        margin-top: 0px;
         width: 90%;
         position: relative;
         left: 5%;
     }
    
     #con_img img{
-        width: 52%;
+        width: 40%;
         position: relative;
-        left: 25%;
+        left: 30%;
         height: auto;
         /* border: 1px solid black; */
-        margin-top: 120px;
+        margin-top: 20px;
     }
   
     #con_p1 h3{
@@ -186,12 +200,14 @@ font-size: 70px;
 @media screen and (min-width:621px) and (max-width:700px){
     #whatis{
         background: url(./../images/whatis.jpeg);
-        height:450px;
+        height:auto;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
-        margin-top: 70px;
+        background-position: top;
+        margin-top: 0px;
+        background-size: 100% 450px;
     }
+
     #head{
         
         font-family: 'Righteous';
@@ -221,19 +237,19 @@ font-size: 70px;
         display: grid;
         grid-template-columns: 100%;
         /* border: 1px solid black; */
-        margin-top: 290px;
+        margin-top: 50px;
         width: 90%;
         position: relative;
         left: 5%;
     }
    
     #con_img img{
-        width: 52%;
+        width: 40%;
         position: relative;
-        left: 25%;
+        left: 30%;
         height: auto;
         /* border: 1px solid black; */
-        margin-top: -20px;
+        margin-top: 0px;
     }
   
     #con_p1 h3{
@@ -267,11 +283,12 @@ font-size: 70px;
 @media screen and (min-width:701px) and (max-width:850px){
     #whatis{
         background: url(./../images/whatis.jpeg);
-        height:450px;
+        height:auto;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
-        margin-top: 40px;
+        background-position: top;
+        margin-top: 0px;
+        background-size: 100% 450px;
     }
     #head{
         
@@ -302,7 +319,7 @@ font-size: 70px;
         display: grid;
         grid-template-columns: 100%;
         /* border: 1px solid black; */
-        margin-top: 290px;
+        margin-top: 70px;
         width: 90%;
         position: relative;
         left: 5%;
@@ -314,7 +331,7 @@ font-size: 70px;
         left: 25%;
         height: auto;
         /* border: 1px solid black; */
-        margin-top: -20px;
+        margin-top: 0px;
     }
  
     #con_p1 h3{
@@ -348,10 +365,11 @@ font-size: 70px;
 @media screen and (min-width:851px) and (max-width:1035px){
     #whatis{
         background: url(./../images/whatis.jpeg);
-        height:450px;
+        height:auto;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: top;
+        background-size: 100% 450px;
     }
     #head{
         
@@ -382,7 +400,7 @@ font-size: 70px;
         display: grid;
         grid-template-columns: 100%;
         /* border: 1px solid black; */
-        margin-top: 290px;
+        margin-top: 70px;
         width: 90%;
         position: relative;
         left: 5%;
@@ -425,3 +443,37 @@ font-size: 70px;
         padding-top: 10px;
     }
 }
+
+
+
+
+ /* @media screen and (max-width:500px){
+    #whatis_main{
+        height: 300vh;
+    }
+  }
+ @media screen and (min-width:501px) and (max-width:575px){
+     #whatis_main{
+        
+        height: 250vh;
+    }
+  } */
+  /* @media screen and (min-width:576px) and (max-width:1035px){
+    #main_footer{
+      position: relative;
+      top:00px;
+     }
+  }
+  @media screen and (min-width:1036px) and (max-width:1199px){
+    #main_footer{
+      position: relative;
+      top:500px;
+     }
+  }
+  @media screen and (min-width:1200px) and (max-width:1400px){
+    #main_footer{
+      position: relative;
+      top:00px;
+     }
+  }
+   */

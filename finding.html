@@ -19,7 +19,9 @@
         $(function () {
             $("#chat").load("chat.html");
           });
-        
+          $(function () {
+            $("#main_footer").load("footer.html");
+          });
     
   </script>
 </head>
@@ -39,11 +41,61 @@
             <span class="finding-cancer-grid-span">Finding cancer in children involves a combination of factors, including recognizing signs and symptoms, conducting medical evaluations, and utilizing diagnostic tests. Here are some key points to consider when discussing finding cancer in children:</span>
         </div>
         <div class="finding-cancer-grid-right">
-            <span class="finding-cancer-grid-rightspan">1. Signs and Symptoms: Many childhood cancers have specific signs and symptoms that may differ from those seen in adults. These can include unexplained weight loss, persistent pain, lumps or swelling, unusual bleeding or bruising, frequent infections, and changes in vision or eye appearance. </span>
-            <span class="finding-cancer-grid-rightspan">2. Medical Evaluation: When a child presents with symptoms that raise suspicion of cancer, a thorough medical evaluation is conducted. This typically involves a comprehensive medical history, physical examination, and laboratory tests to assess blood counts, organ function, and other relevant parameters.</span>
-            <span class="finding-cancer-grid-rightspan">3. Diagnostic Tests: To confirm or rule out cancer, specific diagnostic tests are performed.  Biopsies, where a small sample of tissue is collected for examination, are also crucial in diagnosing cancer and determining its type and characteristics.</span>
+            <span class="finding-cancer-grid-rightspan fade-in-text">1. Signs and Symptoms: Many childhood cancers have specific signs and symptoms that may differ from those seen in adults. These can include unexplained weight loss, persistent pain, lumps or swelling, unusual bleeding or bruising, frequent infections, and changes in vision or eye appearance. </span>
+            <span class="finding-cancer-grid-rightspan fade-in-text">2. Medical Evaluation: When a child presents with symptoms that raise suspicion of cancer, a thorough medical evaluation is conducted. This typically involves a comprehensive medical history, physical examination, and laboratory tests to assess blood counts, organ function, and other relevant parameters.</span>
+            <span class="finding-cancer-grid-rightspan fade-in-text">3. Diagnostic Tests: To confirm or rule out cancer, specific diagnostic tests are performed.  Biopsies, where a small sample of tissue is collected for examination, are also crucial in diagnosing cancer and determining its type and characteristics.</span>
             
         </div>
     </div>
+    <div id="main_footer"></div>
+<script>
+    function isElementInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+          rect.bottom >= 0 &&
+          rect.right >= 0 &&
+          rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+      
+      function handleScroll() {
+        var elements = document.querySelectorAll('.fade-in-up');
+        for (var i = 0; i < elements.length; i++) {
+          var element = elements[i];
+          if (isElementInViewport(element)) {
+            element.classList.add('fade-in-visible');
+          }
+        }
+      }
+      
+      window.addEventListener('scroll', handleScroll);
+      window.addEventListener('resize', handleScroll);
+      window.addEventListener('load', handleScroll);
+
+
+
+
+
+       // JavaScript for text animation on scroll
+       const fadeTextElements = document.querySelectorAll('.fade-in-text');
+
+function fadeInTextOnScroll() {
+    fadeTextElements.forEach((element) => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementPosition < windowHeight) {
+            element.classList.add('fade-in');
+        }
+    });
+}
+
+// Trigger animation on initial page load
+fadeInTextOnScroll();
+
+// Trigger animation on scroll
+window.addEventListener('scroll', fadeInTextOnScroll);
+      </script>
 </body>
 </html>

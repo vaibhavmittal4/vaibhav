@@ -1,20 +1,26 @@
-
+:root {
+    --main-color: #1F5EAB;
+    --second-color: #EC5101;
+    --blue-color: #002148;
+    --orange-color: #ed6a27;
+    --dark-blue: #011226;
+}
 .accessibility-menu{
     position: fixed;
-    right: -180px;
+    right: -20vw;
     /* background: purple; */
-    top: 50px;
-    width: 300px;
+    top: 25vh;
+    width: 28vw;
     display: flex;
     justify-content: center;
     /* height: 100px; */
-    z-index: 1000;
+    z-index: 100;
     transition: .3s;
 
 }
 
 .active-menu{
-    right: 0 !important;
+    right: -3vw !important;
 }
 
 .highlight-links{
@@ -22,8 +28,8 @@
 }
 
 .accessibility-menu .show-menu-toggle {
-    width: 40%;
-    height: 65px;
+    width: 20%;
+    height: 9vh;
     /* background: red; */
     display: flex;
     flex-direction: column;
@@ -32,17 +38,19 @@
     box-shadow: 0px 0px 20px -10px black;
     background: white;
     cursor: pointer;
+    border-radius: 0vw;
 }
 
 .accessibility-menu .show-menu-toggle i{
-    font-size: 1.3vw !important;
-    color: #1F5EAB;
+    font-size: 3.5vw !important;
+    color: var(--main-color);
+    background-color: white;
 }
 
 .accessibility-menu .show-menu-toggle p {
     padding: 0 !important;
     margin: 0 !important;
-    color: #1F5EAB;
+    color: var(--main-color);
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
@@ -56,12 +64,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: white;
 }
 
 .accessibility-menu .menu > p {
-    font-size: .7vw !important;
+    font-size: 1.2vw !important;
     padding-top: 10px;
-    color: #1F5EAB;
+    color: var(--main-color);
+    font-weight: bold;
+    background-color: white;
 }
 
 .accessibility-menu .menu ul{
@@ -71,45 +82,69 @@
 .accessibility-menu .menu ul li {
     width: 95%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-left: 15px;
     padding-right: 15px;
     position: relative;
     color: rgb(69, 69, 69);
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    color: black;
+    margin-top: 10px !important;
+    
 }
 
 .accessibility-menu .menu ul li p {
     cursor: pointer;
     font-size: 15px;
+    color: black;
+    text-align: right;
+}
+.accessibility-menu .menu ul li i {
+    margin-top: 10px !important;
 }
 
 
-.accessibility-menu .menu ul li::after {
-    content: "";
-    position: absolute;
-    bottom: 7px;
-    left: 50%;
-    width: 40%;
-    height: 2px;
-    background-color: rgb(69, 69, 69);
-}
 
-@media only screen and (max-width: 1024px) and (min-width: 700px) {
+
+@media(max-width: 685px){
     .accessibility-menu {
-        right: -100px;
+        width: 50vw;
+        right: -32vw;
+    }
+    .accessibility-menu .show-menu-toggle {
+        width: 32%;
     }
     .active-menu {
-        right:  90px !important;
+        right: -2vw !important;
+    }
+    .accessibility-menu .menu ul li p {
+        font-size: 10px;
+    }
+    .accessibility-menu ul li{
+        padding-right: 11px !important;
     }
 }
-
-@media only screen and (max-width: 700px) {
-    .accessibility-menu .show-menu-toggle i{
-        font-size: 6vw !important;
+@media(max-width: 555px){
+    .accessibility-menu {
+        width: 56vw;
+        right: -36vw;
+    }
+    .accessibility-menu .show-menu-toggle {
+        width: 32%;
+    }
+    .active-menu {
+        right: -2vw !important;
     }
     .accessibility-menu .menu > p {
-        font-size: 4vw !important;
+        font-size: 2.2vw !important;
     }
-    
+    .accessibility-menu .show-menu-toggle i {
+        font-size: 7.5vw !important;
+    }
+    .accessibility-menu ul li{
+        padding-right: 11px !important;
+    }
+    .accessibility-menu .menu ul li p {
+        font-size: 10px;
+    }
 }

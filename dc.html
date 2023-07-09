@@ -303,17 +303,17 @@ p {
   display: grid;
   place-items: center;
   width: fit-content;
-  max-width: 90%;
-  margin-left: 0%;
+  max-width: 100%;
+  /* margin-left: 50%; */
   height: 28.125rem;
   overflow: hidden;
   border-radius: 0.625rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
-    width:90%;
- /* position: relative;
- left: 50%;
- transform: translateX(-50%); */
- margin-left: 5%;
+    width:100%;
+  /* position: relative; */
+ 
+ /* transform: translateX(-50%);  */
+margin-left: 5%;
     
 }
 .card:last-child{
@@ -386,7 +386,7 @@ p {
   outline-offset: -5px;
 }
 #dc_grid {
-    border: px solid red;
+    /* border: 1px solid red; */
     position: relative;
     top: 60px;
     width: fit-content;
@@ -397,17 +397,23 @@ p {
     grid-template-columns: 90%;
     margin-left: 0%;
     /* grid-template-rows: auto auto; */
-    row-gap: 10px;
+    row-gap: 50px;
     column-gap: 0%;
-
+  width:100%;
     
 }
+/* article{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+} */
 #dc_main{
   margin-top: 50px;
   position: relative;
   left: 50%;
     transform: translateX(-50%);
 width: 100%;
+/* border: 1px solid black; */
 }
 }
 @media screen and (min-width:621px) and (max-width:1035px) {
@@ -429,7 +435,7 @@ width: 100%;
     font-size: 15px;
     font-weight: 400;
     /* border: 1px solid orange; */
-     width: 100%;
+     width: 50%;
      font-family: 'Inter', sans-serif;
     height: 40px;
     position: relative;
@@ -681,10 +687,10 @@ p {
     <div id="dc_main">
         <div id="flex5">
                             
-                <p id="head23">Meet Our Specialist Doctors</p>
+                <p id="head23" class="adjustable_text">Meet Our Specialist Doctors</p>
                 
                 <hr id="hr22">
-                <p id="head24">Our website serves as a comprehensive resource for doctors seeking in-depth information and updates on childhood cancer.
+                <p id="head24" class="adjustable_text">Our website serves as a comprehensive resource for doctors seeking in-depth information and updates on childhood cancer.
 
                 </p>
             </div>
@@ -702,8 +708,8 @@ p {
                 />
                 <div class="card__content | flow">
                 <div class="card__content--container | flow">
-                    <h2 class="card__title">Dr. Priya</h2>
-                    <p class="card__description">
+                    <h2 class="card__title adjustable_text">Dr. Priya</h2>
+                    <p class="card__description adjustable_text">
                     Department</p>
                 </div>
                 
@@ -720,8 +726,8 @@ p {
                 />
                 <div class="card__content | flow">
                 <div class="card__content--container | flow">
-                    <h2 class="card__title">Dr. Rajesh</h2>
-                    <p class="card__description">
+                    <h2 class="card__title adjustable_text">Dr. Rajesh</h2>
+                    <p class="card__description adjustable_text">
                     Department</p>
                 </div>
                 
@@ -740,8 +746,8 @@ p {
                 />
                 <div class="card__content | flow">
                 <div class="card__content--container | flow">
-                    <h2 class="card__title">Dr. Vivek Joshi</h2>
-                    <p class="card__description">
+                    <h2 class="card__title adjustable_text">Dr. Vivek Joshi</h2>
+                    <p class="card__description adjustable_text">
                     Department</p>
                 </div>
                 
@@ -760,8 +766,8 @@ p {
                 />
                 <div class="card__content | flow">
                 <div class="card__content--container | flow">
-                    <h2 class="card__title">Dr. Anjali Mehta</h2>
-                    <p class="card__description">
+                    <h2 class="card__title adjustable_text">Dr. Anjali Mehta</h2>
+                    <p class="card__description adjustable_text">
                     Department</p>
                 </div>
                 
