@@ -21,6 +21,7 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 750px;
 }
+
 #head{
     
     font-family: 'Irish Grover', ;
@@ -108,7 +109,7 @@ body{
     
     #abt{
         
-        height: 900px;
+        /* height: 900px; */
         background: url(./../images/photoabout.png);
         background-repeat: no-repeat;
         background-size: 100% 450px;
@@ -193,7 +194,7 @@ body{
     
     #abt{
         
-        height: 900px;
+        /* height: 900px; */
         background: url(./../images/photoabout.png);
         background-repeat: no-repeat;
         background-size: 100% 450px;
@@ -278,7 +279,7 @@ body{
     
     #abt{
         
-        height: 900px;
+        /* height: 900px; */
         background: url(./../images/photoabout.png);
         background-repeat: no-repeat;
         background-size: 100% 750px;
@@ -362,7 +363,7 @@ body{
    
     #abt{
         
-        height: 900px;
+        /* height: 900px; */
         background: url(./../images/photoabout.png);
         background-repeat: no-repeat;
         background-size: 100% 750px;
@@ -443,6 +444,24 @@ body{
     }
 }
 
+@media screen and (max-width:500px){
+    #main_footer{
+      position: relative;
+      top:30vh;
+     }
+  }
+  @media screen and (min-width:501px) and (max-width:575px){
+    #main_footer{
+      position: relative;
+      top:5vh;
+     }
+  }
+  @media screen and (min-width:576px) and (max-width:1035px){
+    #main_footer{
+      position: relative;
+      top:0vh;
+     }
+  }
 .fade-in-text {
     opacity: 0;
     transform: translateX(300px);

@@ -960,30 +960,30 @@ section.ctas-1 div[class^="col-"]:nth-child(odd) .box-inner, section.ctas-2 div[
 @media screen and (max-width:500px){
   #main_footer{
     position: relative;
-    top:2200px;
+    top:2250px;
    }
 }
 @media screen and (min-width:501px) and (max-width:575px){
   #main_footer{
     position: relative;
-    top:1900px;
+    top:1950px;
    }
 }
 @media screen and (min-width:576px) and (max-width:1035px){
   #main_footer{
     position: relative;
-    top:00px;
+    top50px;
    }
 }
 @media screen and (min-width:1036px) and (max-width:1199px){
   #main_footer{
     position: relative;
-    top:500px;
+    top:550px;
    }
 }
 @media screen and (min-width:1200px) and (max-width:1400px){
   #main_footer{
     position: relative;
-    top:00px;
+    top:50px;
    }
 }
