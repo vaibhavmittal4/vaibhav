@@ -63,14 +63,15 @@
     min-width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    background: url(./../images/findingbg.jpeg);
+    background: url(./../images/findingbg.jpeg) , rgba(16 , 41 , 82 , 0.4);
+    opacity:70%;
     background-size: cover;
     color: #F8A52B;
     /* filter: blur(2px);
     -webkit-filter: blur(2px); */
-    
+    background-blend-mode: multiply;
     
 }
 
@@ -86,9 +87,10 @@
 }
 
 .finding-cancer-grid-span{
-    width: 80%;
-    background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4);
+    width:90%;
+    padding: 10px;
+    /* background-color: rgb(0,0,0); /* Fallback color 
+  background-color: rgba(0,0,0, 0.4); */
     /* FONTS */
     font-family: 'Righteous', cursive;
     font-size: 24px;
@@ -96,6 +98,7 @@
     color: #000;
  padding:20px;
     color: white;
+    padding-bottom: 40px;
 }
 
 .finding-cancer-grid-rightspan{
@@ -103,7 +106,7 @@
 
     /* FONTS */
     font-family: 'Reem Kufi Ink', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: #102952;
 }
 

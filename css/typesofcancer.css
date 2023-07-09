@@ -18,7 +18,7 @@
 .typesofcancer-heading{
     border: px solid red;
     position: relative;
-    top: 150px;
+    top: 140px;
     left: 50px;
 
     /* FONTS */
@@ -41,8 +41,9 @@
     /* FONTS */
     
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #858D91;
+    font-size: 24px;
+    color: #4e5255;
+    font-weight: bold;
 }
 
 .typesofcancer-grid{
@@ -119,6 +120,8 @@
     max-height: 0;
     transform: translateY(1em);
     transition: all 0.55s ease;
+    font-family:'Inter' , sans-serif;
+    text-align: justify;
 }
 .card .hover_content p {
     margin: 1.5em 0 0;

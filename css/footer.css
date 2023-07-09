@@ -9,7 +9,7 @@ footer .main-footer {
     background-color: #053065;
     padding-right: 4vw;
     padding-bottom: 2vh;
-    margin-top: 10vh;
+    margin-top: 0vh;
 }
 
 footer .main-footer .first-row {
@@ -182,7 +182,7 @@ footer .logo {
 .footer-bottom-bar ul {
     list-style-type: none;
     display: flex;
-    margin-top: 25px;
+    margin-top: px;
 }
 
 .footer-bottom-bar ul li {
@@ -213,7 +213,7 @@ footer .logo {
         background-color: #053065;
         padding-right: 4vw;
         padding-bottom: 2vh;
-        margin-top: 10vh;
+        margin-top: 0vh;
     }
     
     footer .main-footer .first-row {
@@ -416,7 +416,7 @@ footer .logo {
         background-color: #053065;
         padding-right: 4vw;
         padding-bottom: 2vh;
-        margin-top: 10vh;
+        margin-top: 0vh;
     }
     
     footer .main-footer .first-row {

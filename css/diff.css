@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500&family=Kanit&family=Marcellus&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Reem+Kufi+Ink&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#diff_main{
+    background: url(./../images/diffadultchildps.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+}
+.diff-bg{
+    /* border: 1px solid red; */
+    height: 600px;
+    
+}
+
+
+#main_footer{
+    position: relative;
+    bottom: 0;
+    top: 0;
+}
+.diff-cancer-headingdiv{
+    /* border: 1px solid red; */
+    width: 50%;
+    position: relative;
+    top: 60px;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.diff-cancer-heading{
+    /* FONTS */
+
+    font-family: 'Righteous', cursive;
+    font-size: 75px;
+    color: #F8A52B;
+}
+
+.diff-cancer-heading2{
+    color: #08266C;
+}
+
+.diff-cancer-grid{
+    /* border: 1px solid red; */
+    /* height: 600px; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.diff-cancer-grid-left{
+    /* border: 1px solid red; */
+    background-color: #D8DDE3;
+    /* min-width: 50%; */
+     display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* background: url(./../images/findingbg.jpeg) , rgba(16 , 41 , 82 , 0.4); */
+    /* opacity:70%; */
+    /* background-size: cover; */
+    color: #1F5EAB;
+    /* filter: blur(2px);
+    -webkit-filter: blur(2px); */
+    /* background-blend-mode: multiply; */
+    height: 100%;
+    /* border: 5px solid black; */
+    padding-top: 30px;
+    /* width: 100%; */
+    padding-bottom: 50px;
+    
+}
+
+#lefthead{
+    width: 100%;
+    padding-bottom: 20px;
+}
+#lefthead p{
+    width:max-content;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Inter';
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#lefthead hr{
+   width: 50%;
+    font-weight: bold;
+    font-family: 'Inter';
+    background-color:#1F5EAB;
+    height: 3px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-left: -75px; */
+}
+#bt_con{
+    font-size: 20px;
+}
+#bt_con ul li{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'inter';
+    text-decoration-style: dotted;
+    
+}
+
+
+
+#bt_con2{
+    font-size: 20px;
+}
+#bt_con2 ul li{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-family: 'inter';
+}
+.diff-cancer-grid-right{
+    /* border: 1px solid red; */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    color: #CDB55E;
+    /* width: 50%; */
+    border-left: 3px solid #1F5EAB;
+}
+#righthead{
+    width: 100%;
+    padding-bottom: 20px;
+}
+#righthead p{
+    width:max-content;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Inter';
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #CDB55E;
+    transform: translateX(-50%);
+}
+#righthead hr{
+   width: 50%;
+    font-weight: bold;
+    font-family: 'Inter';
+    background-color:#CDB55E;
+    height: 3px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-left: -75px; */
+}
+
+
+
+
+@media screen and (max-width: 630px) {
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500&family=Kanit&family=Marcellus&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Reem+Kufi+Ink&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#diff_main{
+    background: url(./../images/diffadultchildps.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+}
+.diff-bg{
+    /* border: 1px solid red; */
+    height: 300px;
+    
+}
+
+
+#main_footer{
+    position: relative;
+    bottom: 0;
+    top: 0;
+}
+.diff-cancer-headingdiv{
+    /* border: 1px solid red; */
+    width: 70%;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.diff-cancer-heading{
+    /* FONTS */
+
+    font-family: 'Righteous', cursive;
+    font-size: 35px;
+    color: #F8A52B;
+}
+
+.diff-cancer-heading2{
+    color: #08266C;
+}
+
+.diff-cancer-grid{
+    /* border: 1px solid red; */
+    /* height: 600px; */
+    display: grid;
+    grid-template-columns: 100%;
+    /* margin-left: 5%; */
+}
+
+.diff-cancer-grid-left{
+    /* border: 1px solid red; */
+    background-color: #D8DDE3;
+    /* min-width: 50%; */
+     display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* background: url(./../images/findingbg.jpeg) , rgba(16 , 41 , 82 , 0.4); */
+    /* opacity:70%; */
+    /* background-size: cover; */
+    color: #1F5EAB;
+    /* filter: blur(2px);
+    -webkit-filter: blur(2px); */
+    /* background-blend-mode: multiply; */
+    height: 100%;
+    /* border: 5px solid black; */
+    padding-top: 30px;
+    /* width: 100%; */
+    padding-bottom: 50px;
+    
+}
+
+#lefthead{
+    width: 100%;
+    padding-bottom: 20px;
+}
+#lefthead p{
+    width:max-content;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Inter';
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#lefthead hr{
+   width: 50%;
+    font-weight: bold;
+    font-family: 'Inter';
+    background-color:#1F5EAB;
+    height: 3px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-left: -75px; */
+}
+#bt_con{
+    font-size: 20px;
+}
+#bt_con ul li{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: 'inter';
+    text-decoration-style: dotted;
+    
+}
+
+
+
+#bt_con2{
+    font-size: 20px;
+}
+#bt_con2 ul li{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: 'inter';
+}
+.diff-cancer-grid-right{
+    /* border: 1px solid red; */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    color: #CDB55E;
+    /* width: 50%; */
+    border-left: 0px solid #1F5EAB;
+
+    border-top: 3px solid #1F5EAB;
+
+}
+#righthead{
+    width: 100%;
+    padding-bottom: 20px;
+}
+#righthead p{
+    width:max-content;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Inter';
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #CDB55E;
+    transform: translateX(-50%);
+}
+#righthead hr{
+   width: 50%;
+    font-weight: bold;
+    font-family: 'Inter';
+    background-color:#CDB55E;
+    height: 3px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-left: -75px; */
+}
+}
+@media screen and (max-width: 500px){
+    #main_footer{
+        position: relative;
+        top: 200px;
+    }
+}
+@media screen and (min-width: 631px) and (max-width:950px) {
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500&family=Kanit&family=Marcellus&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Reem+Kufi+Ink&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    #diff_main{
+        background: url(./../images/diffadultchildps.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 100% 400px;
+    }
+    .diff-bg{
+        /* border: 1px solid red; */
+        height: 400px;
+        
+    }
+    
+    
+    #main_footer{
+        position: relative;
+        bottom: 0;
+        top: 0;
+    }
+    .diff-cancer-headingdiv{
+        /* border: 1px solid red; */
+        width: 50%;
+        position: relative;
+        top: 50px;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .diff-cancer-heading{
+        /* FONTS */
+    
+        font-family: 'Righteous', cursive;
+        font-size: 43px;
+        color: #F8A52B;
+    }
+    
+    .diff-cancer-heading2{
+        color: #08266C;
+    }
+    
+    .diff-cancer-grid{
+        /* border: 1px solid red; */
+        /* height: 600px; */
+        display: grid;
+        grid-template-columns: 50% 50%;
+        /* margin-left: 5%; */
+    }
+    
+    .diff-cancer-grid-left{
+        /* border: 1px solid red; */
+        background-color: #D8DDE3;
+        /* min-width: 50%; */
+         display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        /* background: url(./../images/findingbg.jpeg) , rgba(16 , 41 , 82 , 0.4); */
+        /* opacity:70%; */
+        /* background-size: cover; */
+        color: #1F5EAB;
+        /* filter: blur(2px);
+        -webkit-filter: blur(2px); */
+        /* background-blend-mode: multiply; */
+        height: auto;
+        /* border: 5px solid black; */
+        padding-top: 30px;
+        /* width: 100%; */
+        padding-bottom: 50px;
+        
+    }
+    
+    #lefthead{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    #lefthead p{
+        width:max-content;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Inter';
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #lefthead hr{
+       width: 50%;
+        font-weight: bold;
+        font-family: 'Inter';
+        background-color:#1F5EAB;
+        height: 3px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        /* margin-left: -75px; */
+    }
+    #bt_con{
+        font-size: 20px;
+    }
+    #bt_con ul li{
+        margin-top: 20px;
+        margin-left: 30px;
+        font-family: 'inter';
+        text-decoration-style: dotted;
+        font-size: 17px;
+    }
+    
+    
+    
+    #bt_con2{
+        font-size: 20px;
+    }
+    #bt_con2 ul li{
+        margin-top: 20px;
+        margin-left: 30px;
+        font-family: 'inter';
+        font-size: 17px;
+    }
+    .diff-cancer-grid-right{
+        /* border: 1px solid red; */
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 50px;
+        padding-top: 30px;
+        color: #CDB55E;
+        /* width: 50%; */
+        border-left: 3px solid #1F5EAB;
+    height: auto;
+        border-top: 0px solid #1F5EAB;
+    
+    }
+    #righthead{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    #righthead p{
+        width:max-content;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Inter';
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #CDB55E;
+        transform: translateX(-50%);
+    }
+    #righthead hr{
+       width: 50%;
+        font-weight: bold;
+        font-family: 'Inter';
+        background-color:#CDB55E;
+        height: 3px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        /* margin-left: -75px; */
+    }
+}
+
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(-400px);
+    transition: opacity 1s, transform 1s;
+    text-align: left !important;
+  }
+  
+  .fade-in-up.fade-in-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+body{
+    overflow-x: hidden;
+}
+
+
+.fade-in-text {
+    opacity: 0;
+    transform: translateX(300px);
+    transition: opacity 1s, transform 1s;
+    text-align: left !important;
+}
+
+
+.fade-in {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}

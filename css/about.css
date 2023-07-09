@@ -16,7 +16,7 @@ body{
 
 #abt{
     
-    height: 900px;
+    /* height: 900px; */
     background: url(./../images/photoabout.png);
     background-repeat: no-repeat;
     background-size: 100% 750px;
