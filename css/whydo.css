@@ -157,7 +157,7 @@
     grid-column: 2/4;
   }
   
-@media screen and (max-width:621px) {
+@media screen and (max-width:620px) {
     @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500&family=Kanit&family=Marcellus&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap');*{
         margin: 0;
         padding: 0;
@@ -212,7 +212,7 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-    
+    /* height: 00px; */
         display: grid;
         grid-template-columns: 1fr  ;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -343,17 +343,17 @@
         grid-column: 1/1;
       }
 
-      .ag-courses_item:nth-child(5){
-        /* height: 00px; */
-        /* border: 1px solid red; */
-      } 
     
-      .lastwala{
-        /* height: 300px; */
-        /* border: 1px solid red; */
-      }
+    
+     
 }
-
+#main_footer{
+  position: relative;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 
 @media screen and (min-width:621px) and (max-width:1035px){
     @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500&family=Kanit&family=Marcellus&family=Monda:wght@400;700&family=Montserrat:wght@400;600;800;900&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700;900&family=Raleway:wght@600;700&family=Righteous&family=Roboto:wght@100;300;400;700;900&display=swap');*{
@@ -517,3 +517,21 @@
     }
 
 }
+ @media screen and (max-width:500px){
+  #main_footer{
+    position: relative;
+    top:30vh;
+   }
+}/*
+@media screen and (min-width:501px) and (max-width:575px){
+  #main_footer{
+    position: relative;
+    top:5vh;
+   }
+}
+@media screen and (min-width:576px) and (max-width:1035px){
+  #main_footer{
+    position: relative;
+    top:0vh;
+   }
+} */

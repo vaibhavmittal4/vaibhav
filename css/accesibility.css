@@ -17,13 +17,14 @@ body{
     display: flex;
     justify-content: center;
     /* height: 100px; */
-    z-index: 100;
+    z-index: 50;
     transition: .3s;
 
 }
 
 .active-menu{
     right: -3vw !important;
+    position: fixed;
 }
 
 .highlight-links{
@@ -42,6 +43,7 @@ body{
     background: white;
     cursor: pointer;
     border-radius: 0vw;
+    
 }
 
 .accessibility-menu .show-menu-toggle i{

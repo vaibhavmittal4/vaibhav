@@ -57,8 +57,11 @@ z-index: 0;
     width: 700px;
     height: auto;
     margin-top: 30px;
+    transition: all 0.9s ease;
 }
-
+#up_img img:hover{
+  scale: 120%;
+}
 #lower img{
     /* border: 1px solid black; */
     width: 100%;
@@ -836,8 +839,8 @@ section.ctas-1 div[class^="col-"]:nth-child(odd) .box-inner, section.ctas-2 div[
         gap: 0px;
         width: 100%;
         position: absolute;
-        left: 100%;
-        transform: translateX(-100%);
+        left: 50%;
+        transform: translateX(-50%);
         gap:20px;
         border: px solid black !important;
       }
@@ -849,9 +852,7 @@ section.ctas-1 div[class^="col-"]:nth-child(odd) .box-inner, section.ctas-2 div[
         min-width: 100%;
         /* border: 1px solid black; */
         width: 100%;
-        position: absolute;
-        left: 100%;
-        transform: translateX(-100%);
+        
         border: px solid black !important;
       }
       .ctas-1{
@@ -972,7 +973,7 @@ section.ctas-1 div[class^="col-"]:nth-child(odd) .box-inner, section.ctas-2 div[
 @media screen and (min-width:576px) and (max-width:1035px){
   #main_footer{
     position: relative;
-    top50px;
+    top:50px;
    }
 }
 @media screen and (min-width:1036px) and (max-width:1199px){

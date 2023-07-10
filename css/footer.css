@@ -550,7 +550,7 @@ footer .logo {
         
     }
     #customul{
-        margin-top: -14px !important;
+        margin-top: 0px !important;
     }
     .uls ul li::before {
         content: "\2022";
@@ -565,7 +565,7 @@ footer .logo {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 3vh;
+        margin-top: 7vh;
     }
     
     .second-row img {
